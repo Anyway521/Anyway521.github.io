@@ -127,4 +127,4 @@ backup:
     message: update yilia
     repository:
        github: git@github.com:Anyway521/Anyway521.github.io.git,backup
-       coding: git@git.dev.tencent.com:Des_tiny/Des_tiny.git,backup
+       coding: git@git.coding.net:Des_tiny/Des_tiny.git,backup
