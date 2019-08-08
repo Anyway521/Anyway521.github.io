@@ -1,0 +1,71 @@
+---
+title: 一次删除Window.old的翻车记录
+tags: Win10
+abbrlink: f5874978
+date: 2019-08-05 20:28:55
+reward: true
+declare: true
+---
+
+![466555.jpg](https://cdn.anyway1314.cn/image466555.jpg)
+
+更新了Win10最新版本1903，C盘冒出个27G的Windows.old文件夹，  
+百度了一下，“可以放心删除”、“没事的，只是个备份文件”……  
+然鹅，(╯‵□′)╯︵┻━┻
+<!-- more -->
+
+### 开始菜单、设置打不开
+
+![ddfdf4514.jpg](https://cdn.anyway1314.cn/imageddfdf4514.jpg)
+
+以为应该是腾讯管家粉碎的“后劲儿”太大，重启一下然并卵，  
+求度娘：[参考链接](https://answers.microsoft.com/zh-hans/windows/forum/windows_10-performance/win10%E8%AE%BE%E7%BD%AE%E5%85%A8%E9%83%BD%E6%89%93/42c9e5b1-a989-4472-ad81-e9c5d8be78d7)  
+
+![QQ截图20190805205620.png](https://cdn.anyway1314.cn/imageQQ截图20190805205620.png)
+
+### 开始菜单所有已安装应用的快捷方式，凭空消失
+
+![QQ截图20190805143813.png](https://cdn.anyway1314.cn/imageQQ截图20190805143813.png)
+
+为什么说是快捷方式消失，因为，“应用和功能”里明明就有
+
+![QQ截图20190805183650.png](https://cdn.anyway1314.cn/imageQQ截图20190805183650.png)
+
+解决方式1：[参考链接](https://zhidao.baidu.com/question/566069935263934164.html)
+
+![QQ截图20190805183831.png](https://cdn.anyway1314.cn/imageQQ截图20190805183831.png)
+
+解决方式2：[参考链接](https://zhidao.baidu.com/question/395942056731654805.html?qbl=relate_question_2&word=win10%BF%AA%CA%BC%B2%CB%B5%A5%CF%D4%CA%BE%CB%F9%D3%D0%D2%D1%B0%B2%D7%B0%B3%CC%D0%F2)
+
+![QQ截图20190805172601.png](https://cdn.anyway1314.cn/imageQQ截图20190805172601.png)
+
+这些方法可能有用吧，_(:з」∠)__ 但我这里统统不管用，另外application文件夹里只有新安装的程序，“应用和功能”里那些老的也都没有。
+
+![QQ截图20190804193310.png](https://cdn.anyway1314.cn/imageQQ截图20190804193310.png)
+
+最后，只能一个个去找原来程序的安装位置。  
+- C盘安装的有一部分没了，但“应用和功能”里还有，这些只能重新下载安装了。(重新安装的，在开始菜单也能找到)
+- 其余程序可以通过找到他们的安装位置，启动一下就行了，(但开始菜单和Application文件夹里还是没有)
+
+### 搜索器失灵
+之前删掉了所有桌面快捷方式，<kbd>Win</kbd> + <kbd>S</kbd>和开始菜单就成了常规的打开方式，这下悲催了。目前还没找到方法修复。  
+百度的方法也没用 :[参考链接](https://jingyan.baidu.com/article/9f63fb9184d3c4c8400f0e3f.html)
+
+![QQ截图20190805185331.png](https://cdn.anyway1314.cn/imageQQ截图20190805185331.png)
+
+### win10系统自带应用损坏
+Microsoft Store和Edge浏览器都挂了，度娘说 [参考链接](https://jingyan.baidu.com/article/6b182309fb2e6fba58e1590b.html)
+应用商店修复成功了，但是浏览器，还是打不开
+
+![QQ截图20190805172634.png](https://cdn.anyway1314.cn/imageQQ截图20190805172634.png)
+
+浏览器一直这个状态，看起来像是“重新下载”的状态。
+
+![20190805215345.png](https://cdn.anyway1314.cn/image20190805215345.png)
+
+### 不过也有好的地方
+系统确实快了不少，不过有时还是会卡，升级1903版本后就这样了，用着很流畅，但是很容易运存就90%以上，然后巨卡(所以说还是先别升级了，1803,1809凑合用吧)
+
+![8411424.jpg](https://cdn.anyway1314.cn/image8411424.jpg)
+
+删除有风险，升级需谨慎！！！ヾ(￣ー￣)X(^▽^)ゞ

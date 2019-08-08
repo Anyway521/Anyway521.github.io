@@ -1,0 +1,192 @@
+# Header
+
+menu:
+  主页: '/'
+  #留言: '/MessageBoard/'
+  归档: '/archives/'
+  # 分类: '/categories/'
+  #关于: '/about/'
+
+
+# SubNav
+subnav:
+  bilibili: 'https://space.bilibili.com/382349038'
+  qq: 'https://cdn.anyway1314.cn/imageMyqq2411535738.jpg'
+  #weibo: "#"
+  #zhihu: "#"
+  #weixin: '#'
+  #jianshu: "#"
+  #douban: "#"
+  #segmentfault: "#"
+  github: 'https://github.com/Anyway521'
+  #acfun: "#"
+  mail: 'https://cdn.anyway1314.cn/imagemail.png'
+  #facebook: "#"
+  #google: "#"
+  #twitter: "#"
+  #linkedin: "#"
+  rss: '/atom.xml'
+
+# 是否需要修改 root 路径
+# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
+# 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
+root:
+
+# Content
+
+# 文章太长，截断按钮文字，直接在文章里加入<!--more-->就可以注释掉这里
+excerpt_link:  
+# 文章卡片右下角常驻链接，不需要请设置为false
+show_all_link: '展开全文'
+# 数学公式
+mathjax: false
+# 是否在新窗口打开链接
+open_in_new: false
+fancybox: true
+
+# 打赏
+# 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
+reward_type: 1
+# 打赏wording
+reward_wording: '创作不易，感谢支持！'
+# 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
+alipay: '/img/ali.jpg'
+# 微信二维码图片地址
+weixin: '/img/wc.png'
+
+# # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有copyright不为false的文章均有版权声明
+# copyright_type: 2
+
+## 版权声明   
+declare_type: 1      # 0:关闭  1，declare: true则开启 2，全都开启
+licensee_url: https://creativecommons.org/licenses/by-nc-sa/4.0/          # 当前应用的版权协议地址。
+licensee_name: '知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议'  # 版权协议的名称
+licensee_img: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png      # 版权协议的Logo
+
+# 备案信息，没有请留空
+beian: 豫ICP备18033287号-1
+
+# 又拍云开发者计划图片链接，没有请留空
+upyun: 
+
+# 目录
+# 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
+toc: 1
+# 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false
+toc_hide_index: false
+# 目录为空时的提示
+toc_empty_wording: '目录，不存在的…'
+
+# 是否有快速回到顶部的按钮
+top: true
+
+# Miscellaneous 百度统计和谷歌统计，站点标识
+#baidu_analytics: ''
+#google_analytics: ''
+
+#网站图标，icon格式
+favicon: '/img/timg.ico'
+
+#你的头像url
+avatar: '/img/me.jpg'
+
+#是否开启分享，如果不需要建议不要开启
+share_jia: true
+
+#评论：1、多说；2、网易云跟帖；3、畅言；4、Disqus；5、Gitment；6、valine
+#不需要使用某项，直接设置值为false，或注释掉
+#具体请参考wiki：https://github.com/litten/hexo-theme-yilia/wiki/
+
+#1、多说
+# duoshuo: false
+
+# #2、网易云跟帖
+# wangyiyun: false
+
+#3、畅言
+#changyan_appid: 
+#changyan_conf: 
+
+# #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
+# disqus: false
+
+#5、Gitment
+# gitment_owner: 'Anyway521'      #你的 GitHub ID
+# gitment_repo: 'Anyway521.github.io'          #存储评论的 repo
+# gitment_oauth:
+#   client_id: '5fe457b2567518212ac2'           #client ID
+#   client_secret: '3fe6e74088cfa7321be32eb5e3584accb5d39af4'       #client secret
+  
+  
+#6、Valine https://valine.js.org
+# valine: 
+#   enable: true
+#   #Leancloud应用的appId
+#   appid: 5y0LtXIrx2FacaeYoLzmg7sv-gzGzoHsz 
+#   #Leancloud应用的appId
+#   appkey: XoG9OJyQ6eLXMny0nuy8tQAT 
+#   verify: true 
+#   #验证码
+#   notify: true 
+#   #评论回复提醒
+#   avatar: '/mm/identicon/monsterid/wavatar/retro/hide'
+#   #评论列表头像样式：'/mm/identicon/monsterid/wavatar/retro/hide'
+#   avatar_cdn: '' 
+#   #头像CDN
+#   placeholder: '友情提醒，留下正确的邮箱地址可以第一时间获取评论反馈' #评论框占位符
+#   pageSize: 10 #评论分页
+#   visitor: true #阅读统计
+
+# 样式定制 - 一般不需要修改，除非有很强的定制欲望…
+style:
+  # 头像上面的背景颜色
+  # header: '#00BFFF'
+  header: '#00000'
+  # 右滑板块背景
+  slider: 'linear-gradient(200deg,#b4d8d8,#66c3d5)'
+  
+# slider的设置
+slider:
+  # 是否默认展开tags板块
+  showTags: true
+
+# MarkDown文件下载地址,如：http://md.xxwhite.com，以后会写文章教怎么上传原文，不会请留空
+mdhost: 
+
+#pangu.js 用于自动加空格
+pangu: true
+
+#7、配置gitalk
+gitalk: 
+  enable:  true #用来做启用判断可以不用
+  githubID:  Anyway521
+  repo:  'comments'
+  # 存储博客评论的仓库地址，可以是存储博客的仓库
+  ClientID:  '5fe457b2567518212ac2'
+  ClientSecret:  '9c64bdc5ec597bb7e86fd6d41884603c2076d1f2'
+  adminUser:  Anyway521
+  distractionFreeMode:  true
+  
+#8、百度统计
+baidu_tongji: true
+
+# 智能菜单
+# 如不需要，将该对应项置为false
+# 比如
+#smart_menu:
+#  friends: false
+smart_menu:
+  innerArchive: '所有文章'
+  friends: 'ZONE'
+  aboutme: '关于我'
+
+friends:
+  我的CSDN: 'https://blog.csdn.net/qq_40922859'
+  亦往沧劫: 'https://blog.todest.cn/'
+  落雪特效: 'https://anyway1314.cn/ZONE/drsn'
+  爱心表白特效: 'https://anyway1314.cn/ZONE/express'
+  Canvas动态背景: 'https://anyway1314.cn/ZONE/point'
+  下载本站App: 'https://cdn.anyway1314.cn/DRSN_1.2.apk'
+
+#在这里添加任何配置，都加在“aboutme”的上面，否则会出问题 
+aboutme: <br>我必须承认<br><br>生命中大部分时光是属于孤独的，<br><br>努力成长<br><br>是在孤独里可以进行的最好的游戏。
