@@ -285,6 +285,7 @@ yilia\source\asset路径下新建`clicklove.js`,内容如下：
 <p id="hitokoto">:D 获取中...</p>
 <script src="https://v1.hitokoto.cn/?encode=jsselect=%23hitokoto" defer></script>
 ```
+附：[一言（Hitokoto）](https://hitokoto.cn/api)
 # 六、CSS自定义
 ## 1、<kbd>F12</kbd> 审查元素,找到自己要修改的内容：
 

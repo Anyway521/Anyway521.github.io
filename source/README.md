@@ -107,7 +107,8 @@ Powered by [yilia](http://litten.me/)
 - 文章字体调节
     - h1 1.75rem -> 1.625rem（约26px,与文章标题一致）
     - h2 1.4375 rem -> 1.4rem
-    - h1~h6:weight 900 -> 400     
+    - h1~h6:weight 900 -> 400 
+- PC端&移动端一言(Hitokoto)api优化
 
 ***
 联系方式：  

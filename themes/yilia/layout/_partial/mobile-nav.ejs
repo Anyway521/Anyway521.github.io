@@ -12,7 +12,21 @@
 			  <h1 class="header-author js-header-author"><%=theme.author%></h1>
 			</hgroup>
 			<% if (theme.subtitle){ %>
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i><%=theme.subtitle%><i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle">_(:з」∠)_ 加载中...
+				<script>
+					fetch('https://v1.hitokoto.cn')
+					  .then(function (res){
+						return res.json();
+					  })
+					  .then(function (data) {
+						var hitokoto = document.getElementsByClassName('header-subtitle')[0];
+						hitokoto.innerText = data.hitokoto; 
+					  })
+					  .catch(function (err) {
+						console.error(err);
+					  })
+				  </script>
+				</p>
 			<% } %>
 			<% var count = 0%>
 			<% for (var i in theme.menu){ %>
