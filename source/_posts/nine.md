@@ -41,51 +41,52 @@ Valine用了没几天，感觉还是不习惯￣へ￣
 ```
 ## 2、在`layout\_partial\post`目录下新建`gitalk.ejs`
 ``` js
-<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script type="text/javascript">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script type="text/javascript">
 
-if(<%=theme.gitalk.enable%>){
-	var gitalk = new Gitalk({
-  	clientID: '<%=theme.gitalk.clientID%>',
-  	clientSecret: '<%=theme.gitalk.clientSecret%>',
-  	repo: '<%=theme.gitalk.repo%>',
-  	owner: '<%=theme.gitalk.owner%>',
-  	admin: ['<%=theme.gitalk.admin%>'],
-  	id: '<%= page.date %>',
-  	distractionFreeMode: '<%=theme.gitalk.distractionFreeMode%>'
-})
-gitalk.render('gitalk-container') 
-}
-</script>
+  if(<%=theme.gitalk.enable%>){
+    var gitalk = new Gitalk({
+      clientID: '<%=theme.gitalk.clientID%>',
+      clientSecret: '<%=theme.gitalk.clientSecret%>',
+      repo: '<%=theme.gitalk.repo%>',
+      owner: '<%=theme.gitalk.owner%>',
+      admin: ['<%=theme.gitalk.admin%>'],
+      id: '<%= page.date %>',
+      distractionFreeMode: '<%=theme.gitalk.distractionFreeMode%>'
+  })
+  gitalk.render('gitalk-container') 
+  }
+  </script>
 ```
 ## 3、修改`yilia\source-src\css\`目录下的`comments.scss`
 *在第一行增加 `#gitalk-container`，修改后：
 ``` css
-#disqus_thread, .duoshuo, .cloud-tie-wrapper, #SOHUCS, #gitment-ctn, #gitalk-container{
-	padding: 0 30px !important;
-	min-height: 20px;
-}
+  #disqus_thread, .duoshuo, .cloud-tie-wrapper, #SOHUCS, #gitment-ctn, #gitalk-container{
+    padding: 0 30px !important;
+    min-height: 20px;
+  }
 
-#SOHUCS {
-	#SOHU_MAIN .module-cmt-list .block-cont-gw {
-		border-bottom: 1px dashed #c8c8c8 !important;
-	}
-}
+  #SOHUCS {
+    #SOHU_MAIN .module-cmt-list .block-cont-gw {
+      border-bottom: 1px dashed #c8c8c8 !important;
+    }
+  }
 ```
 # 配置主题的`_config.yml`
 ## 注释掉valine的代码，新增gitalk的配置：
 ``` yml
-#7、配置gitalk
-gitalk: 
-  enable:  true #用来做启用判断可以不用
-  owner:  #github用户名
-  repo:  '' # 存储博客评论的仓库地址，可以是存储博客的仓库
-  clientID:  '' #ClientID
-  clientSecret:  '' #ClientSecret
-  admin:  #github用户名
-  distractionFreeMode:  true
+  #7、配置gitalk
+  gitalk: 
+    enable:  true #用来做启用判断可以不用
+    owner:  #github用户名
+    repo:  '' # 存储博客评论的仓库地址，可以是存储博客的仓库
+    clientID:  '' #ClientID
+    clientSecret:  '' #ClientSecret
+    admin:  #github用户名
+    distractionFreeMode:  true
 ```
+
 ## 重新部署，记得初始化一下哦(/≧▽≦)/

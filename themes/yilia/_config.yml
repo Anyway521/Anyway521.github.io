@@ -10,8 +10,8 @@ menu:
 
 # SubNav
 subnav:
+  csdn: 'https://blog.csdn.net/qq_40922859'
   bilibili: 'https://space.bilibili.com/382349038'
-  qq: 'https://cdn.anyway1314.cn/imageMyqq2411535738.jpg'
   #weibo: "#"
   #zhihu: "#"
   #weixin: '#'
@@ -20,7 +20,8 @@ subnav:
   #segmentfault: "#"
   github: 'https://github.com/Anyway521'
   #acfun: "#"
-  mail: 'https://cdn.anyway1314.cn/imagemail.png'
+  #mail: 'https://cdn.anyway1314.cn/imagemail.png'
+  qq: 'https://cdn.anyway1314.cn/imageMyqq2411535738.jpg'
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -141,7 +142,7 @@ share_jia: true
 style:
   # 头像上面的背景颜色
   # header: '#00BFFF'
-  header: '#00000'
+  #header: '#00000'
   # 右滑板块背景
   slider: 'linear-gradient(200deg,#b4d8d8,#66c3d5)'
   
@@ -181,7 +182,6 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
-  我的CSDN: 'https://blog.csdn.net/qq_40922859'
   亦往沧劫: 'https://blog.todest.cn/'
   落雪特效: 'https://anyway1314.cn/ZONE/drsn'
   爱心表白特效: 'https://anyway1314.cn/ZONE/express'

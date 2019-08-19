@@ -1,7 +1,26 @@
-<% var defaultBg = '#4d4d4d'; %>
-<div class="overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>"></div>
+<script >
+	window.onload=function(){
+	var bglist = [];
+		bglist[0] = "https://cdn.anyway1314.cn/imageba.jpg";
+		bglist[1] = "https://cdn.anyway1314.cn/imagebkg-8.jpg";
+		bglist[2] = "https://cdn.anyway1314.cn/imagebkg-7.jpeg";
+		bglist[3] = "https://cdn.anyway1314.cn/imagebkg-10.jpg";
+		bglist[4] = "https://cdn.anyway1314.cn/imagebkg-11.jpg";
+		bglist[5] = "https://cdn.anyway1314.cn/imagebkg-13.jpg";
+	var i = 0;
+	var bkg=document.getElementsByClassName("left-col")[0]; 
+	bkg.style.background="url(https://cdn.anyway1314.cn/imageba.jpg)";  
+			function time(){
+				   i<5?i++:i=0; 
+				   bkg.style.background="url("+bglist[i]+")"; 
+			}
+			setInterval(time,3000);
+	}
+</script>
+
+<div class="overlay"></div>
 <div class="intrude-less">
-	<header id="header" class="inner" style="font-size:15px;color:#00BFFF;font-weight: 500;">
+	<header id="header" class="inner" style="font-size:15px;;font-weight: 500;">
 		<a href="<%=theme.root%>" class="profilepic">
 			<img src="<%=theme.avatar%>" class="js-avatar">
 		</a>

@@ -38,4 +38,4 @@ document.oncontextmenu=function(){
     return false;
 }
 ```
-实际效果参考：[<u>可以去这个页面试一试</u>](https://anyway1314.cn/ZONE/drsn)  
+实际效果参考：[可以去这个页面试一试](https://anyway1314.cn/ZONE/point)  

@@ -119,12 +119,12 @@ deploy:
   type: git
   repository: 
       github: git@github.com:Anyway521/anyway521.github.io.git
-      coding: git@git.coding.net:Des_tiny/Des_tiny.git
+      coding: git@git.dev.tencent.com:Des_tiny/Des_tiny.git
   branch: master
-##Backup
+## Backup
 backup:
     type: git
     message: update yilia
     repository:
        github: git@github.com:Anyway521/Anyway521.github.io.git,backup
-       coding: git@git.coding.net:Des_tiny/Des_tiny.git,backup
+       coding: git@git.dev.tencent.com:Des_tiny/Des_tiny.git,backup

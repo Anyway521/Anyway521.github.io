@@ -13,7 +13,7 @@ date: 2019-06-12 09:19:07
 分享一些博客基础的配置((*^▽^*))<br>参考了一些博客，Ծ‸Ծ一点一点填坑~
 <!--more-->
 
-# 添加统计(不蒜子&字数统计)
+# 一、添加统计(不蒜子&字数统计)
 ## 1、总体统计
 找到`themes\yilia\layout\_partial\after-footer.ejs`,添加：
 ``` js
@@ -79,7 +79,7 @@ word_count: true
     </span>
 </div>
 ```
-# 添加文章目录(两种)
+# 二、添加文章目录(两种)
 ## 1、主题默认方式
 
 ![QQ截图20190718120622.png](https://cdn.anyway1314.cn/imageQQ截图20190718120622.png)
@@ -145,7 +145,7 @@ word_count: true
 <!-- 目录内容结束 -->
 ```
 对应每篇文章的md文件，开头加上`toc: true`属性就行
-# 添加valine评论系统(Gitalk参见另一篇文章：[点击跳转](https://blog.anyway1314.cn/post/2ee2703d.html) )
+# 三、添加valine评论系统(Gitalk参见另一篇文章：[点击跳转](https://blog.anyway1314.cn/post/2ee2703d.html) )
 ## 1、注册learncloud账号，创建应用(需要先实名认证账号)
 
 ![20190715170626.png](https://cdn.anyway1314.cn/image20190715170626.png)
@@ -212,7 +212,7 @@ valine:
 ## 6、valine绑定邮箱接收回复通知
 参考valine文档连接：[参考链接1](https://deserts.io/diy-a-comment-system/#云引擎一键部署)、[参考链接2](https://github.com/xCss/Valine/wiki/Valine-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE)
 
-# 添加爱心点击效果
+# 四、添加爱心点击效果
 ## 1、新建js文件：
 yilia\source\asset路径下新建`clicklove.js`,内容如下：
 ``` js
@@ -269,7 +269,7 @@ yilia\source\asset路径下新建`clicklove.js`,内容如下：
 <script type="text/javascript" src="/assets/clicklove.js"></script>
 //注意：这里的路径要对应之前创建clicklove.ejs的地方
 ```
-# 调用一言API(刷新自动生成个性签名)
+# 五、调用一言API(刷新自动生成个性签名)
 ## 修改代码
 找到`themes\yilia\layout\_partial\left-col.ejs`文件
 (大概12行，theme.subtitle属性内):
@@ -285,7 +285,7 @@ yilia\source\asset路径下新建`clicklove.js`,内容如下：
 <p id="hitokoto">:D 获取中...</p>
 <script src="https://v1.hitokoto.cn/?encode=jsselect=%23hitokoto" defer></script>
 ```
-# CSS自定义
+# 六、CSS自定义
 ## 1、<kbd>F12</kbd> 审查元素,找到自己要修改的内容：
 
 ![20190720140107.png](https://cdn.anyway1314.cn/image20190720140107.png)
@@ -296,7 +296,7 @@ yilia\source\asset路径下新建`clicklove.js`,内容如下：
 ![QQ截图20190720110450.png](https://cdn.anyway1314.cn/imageQQ截图20190720110450.png)
 
 *<kbd>F12</kbd> 是个好东西(-^▽^-) 
-# 文章加密
+# 七、文章加密
 ## 1、引入加密插件`encrypt`  
 找到博客根目录下的`package.json`,最下面添加：
 ``` json
@@ -329,7 +329,7 @@ abstract: 这里是博客简述（能被访客看见）
 message: 输入密码提示语句（例如：请输入密码）
 ---
 ```
-# 添加RSS
+# 八、添加RSS
 ## 1、安装插件：
 ``` yml
 npm install --save hexo-generator-feed
@@ -344,14 +344,14 @@ npm install --save hexo-generator-feed
 ``` yml
   rss: '/atom.xml'
 ```
-# 上传README.md文件
+# 九、上传README.md文件
 ## 1、在博客根目录的source文件夹内，新建`README.md`文件
 ## 2、在博客根目录的`_config.yml`里修改配置：  
 
 ![QQ截图201907201318100.png](https://cdn.anyway1314.cn/imageQQ截图201907201318100.png)  
     
 //hexo部署页面的时候会默认把source目录下的`.md`文件渲染成`html`,所以需要跳过`README.md`的渲染。 
-# SEO优化
+# 十、SEO优化
 ## 1、加密文章URL
 默认的 `网址/年/月/日/文章名` 格式不便于搜索引擎抓取，需要进行优化  
 <p style="color:red">注意：修改之后旧文章的统计数据(浏览量)会重新计数，所以建议在一开始写文章时就做好这一步</p> 

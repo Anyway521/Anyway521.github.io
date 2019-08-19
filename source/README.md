@@ -70,7 +70,7 @@ Powered by [yilia](http://litten.me/)
 - 移动端杂项优化
 
 
-## 2019-7-30 yilia-qure
+## 2019-7-30 yilia-qure，清新护眼
 ### PC端
 ![QQ截图20190803213146.png](https://cdn.anyway1314.cn/imageQQ截图20190803213146.png)
 
@@ -81,10 +81,34 @@ Powered by [yilia](http://litten.me/)
 - 左侧智能菜单函数优化
     - linear-gradient(200deg,#1E90FF->#b4d8d8,#B0C4DE->#66c3d5)
 - 社交图标优化
-- 左边栏字体`hover`: `#ffee93` ->`#4B0082`(靛青)
+- 左边栏字体`hover`: `#ffee93` ->`#4B0082`
 - 文章元素`hover`:`#00d7f3`,`#00a8f3`均改为`#0f66bc` 
 - 关闭字数统计
-- 一言api加上鼠标点触属性(同左边栏字体)
+- 一言api新增鼠标点触属性(同左边栏字体)
+- 字数统计配色`#04338c`
+
+## 2019-8-10 增加CSDN社交图标
+![20190810204141.png](https://cdn.anyway1314.cn/image20190810204141.png)
+- QQ图标配色优化（原谅绿->QQ蓝）
+
+## 2019-8-16 增加“fork me on github”丝带
+![QQ截图20190817165748.png](https://cdn.anyway1314.cn/imageQQ截图20190817165748.png)
+
+
+
+## 2019-8-18 左侧背景改为动态切换(pc端)
+
+点击查看动图：[GIF](https://cdn.anyway1314.cn/imagefgddsdtty.gif)
+
+- 配色更改：
+    - 中间边框（.mid-col）#eee->#e6faf8
+    - 文章边框（.article）azure ->#d0e8e8
+    - a标签增加hover:#4B0082
+- 文章字体调节
+    - h1 1.75rem -> 1.625rem（约26px,与文章标题一致）
+    - h2 1.4375 rem -> 1.4rem
+    - h1~h6:weight 900 -> 400     
+
 ***
 联系方式：  
   QQ : 2411535738  
