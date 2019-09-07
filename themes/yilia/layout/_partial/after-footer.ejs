@@ -15,7 +15,31 @@
 </script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <script type="text/javascript" src="/clicklove.js"></script>
-
+<script>
+	document.onkeydown=function(){
+	   var e = window.event||arguments[0];
+	   if(e.keyCode==123){
+		   alert('还在按F12?╭(╯^╰)╮');
+			   return false;
+	   }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==73)){
+		   alert('Crtl+Shift+I 有用？(￣ε(#￣)');
+			   return false;
+	   }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==74)){
+		   alert('Crtl+Shift+J 有用咩??o(*￣︶￣*)o');
+			   return false;
+	   }else if((e.ctrlKey)&&(e.keyCode==83)){
+			   alert('Crtl+S保存？╰╮(￣▽￣///)！');
+			   return false;
+	   }else if((e.ctrlKey)&&(e.keyCode==85)){
+			  alert('Crtl+U ?(╯‵□′)╯才不给你看源代码');
+			  return false;
+	   }
+   }
+   document.oncontextmenu=function(){
+	   alert('鼠标右键也不好使呦罒ω罒');
+	   return false;
+   }
+	 </script>
 <%- partial('script') %>
 
 <% if (theme.mathjax){ %>

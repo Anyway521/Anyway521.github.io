@@ -11,7 +11,7 @@ author: 本该如此
 language: zh-CN
 timezone:
 
-# URL
+# 你网站的URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://anyway1314.cn
 root: /
@@ -31,7 +31,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-# 跳过渲染
+# 跳过渲染，第一次用这个主题可以注释掉
 skip_render: 
   - "README.md"  
   - "ZONE/**"  
@@ -52,7 +52,7 @@ highlight:
   auto_detect: false
   tab_replace:
   
-# Home page setting
+# Home page setting 主页分页文章数
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
@@ -79,17 +79,19 @@ per_page: 6
 pagination_dir: page
 
 # Counting words
+# 字数统计，看个人需要是否开启
 word_count: false
 
 # Security
-##
+## 文章加密
 encrypt:
     enable: true
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#rss
+
+# 生成页面rss
 plugins: hexo-generater-feed
 
 theme: yilia
@@ -113,7 +115,7 @@ jsonContent:
       categories: false
       tags: true
 
-# Deployment
+# Deployment：
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
@@ -122,6 +124,7 @@ deploy:
       coding: git@git.dev.tencent.com:Des_tiny/Des_tiny.git
   branch: master
 ## Backup
+## 备份，按需所取
 backup:
     type: git
     message: update yilia
