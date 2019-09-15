@@ -1,7 +1,7 @@
 blog.anyway1314.cn
 ================
 
-简约优雅的个人博客，性能极致。 你可以点击 [我的博客](http://blog.anyway1314.cn/) 查看效果。  
+简约优雅的个人博客，点击 [我的博客](http://blog.anyway1314.cn/) 查看效果。  
 Powered by [yilia](http://litten.me/)    
 
 
@@ -15,8 +15,6 @@ Powered by [yilia](http://litten.me/)
 
 ## 2019-7-20主题美化
 
-![QQ截图20190720115023.png](https://cdn.anyway1314.cn/imageQQ截图20190720115023.png)
-
 - 更改了左侧栏的背景颜色
 - 更改了`文章标题`、`字数统计`、`日期`、`文章`的颜色 --> `#08c`
 - 文章背景颜色更改为 `azure`
@@ -26,8 +24,6 @@ Powered by [yilia](http://litten.me/)
 —————————————————————   
 
 ## 2019-7-21主题美化
-
-![QQ截图20190720170519.png](https://cdn.anyway1314.cn/imageQQ截图20190720170519.png)
 
 - 优化了配色方案:
     - 左侧栏配色更改 `#08c` --> `#00a8f3`
@@ -109,6 +105,20 @@ Powered by [yilia](http://litten.me/)
     - h2 1.4375 rem -> 1.4rem
     - h1~h6:weight 900 -> 400 
 - PC端&移动端一言(Hitokoto)api优化
+
+## 2019-9-15 主题优化
+
+![QQ截图20190915161407.png](https://cdn.anyway1314.cn/imageQQ截图20190915161407.png)
+
+- 字体更改
+    - font-fimily : 改为：'Microsoft YaHei','SF Pro Display',Roboto,Noto,Arial,'PingFang SC',sans-serif
+    - 代码段：
+         - 字体颜色：#c7254e
+         - 背景色以及背景线条： #f9f2f4
+    - 标题（h1-h6）:weight改为600     
+- 左侧栏更改不太适配的背景图片
+- (新)主页标题weight:500,打开文章后，h1还是weight:600.
+   - .article-inner h1.article-title, .article-title{ 改为.article-title{
 
 
 ***
