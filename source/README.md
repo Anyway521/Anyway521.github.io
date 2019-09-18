@@ -119,6 +119,13 @@ Powered by [yilia](http://litten.me/)
 - 左侧栏更改不太适配的背景图片
 - (新)主页标题weight:500,打开文章后，h1还是weight:600.
    - .article-inner h1.article-title, .article-title{ 改为.article-title{
+- 代码高亮 #e6db74->#32e91e, #fff -> #25c8fd ,#7163d7->#FFEB3B
+
+## 2019-9-17
+
+- 新增版本 light-blue
+
+![QQ截图20190917002518.png](https://cdn.anyway1314.cn/imageQQ截图20190917002518.png)
 
 
 ***

@@ -94,7 +94,7 @@ encrypt:
 # 生成页面rss
 plugins: hexo-generater-feed
 
-theme: yilia
+theme: yilia-lightblue
 
 jsonContent: 
     meta: false
@@ -127,7 +127,7 @@ deploy:
 ## 备份，按需所取
 backup:
     type: git
-    message: update yilia
+    message: update yilia-lightblue
     repository:
-       github: git@github.com:Anyway521/Anyway521.github.io.git,backup
-       coding: git@git.dev.tencent.com:Des_tiny/Des_tiny.git,backup
+       github: git@github.com:Anyway521/Anyway521.github.io.git,lightblue
+       coding: git@git.dev.tencent.com:Des_tiny/Des_tiny.git,lightblue
