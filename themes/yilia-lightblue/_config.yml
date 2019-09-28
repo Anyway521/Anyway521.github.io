@@ -36,7 +36,7 @@ root:
 # Content
 
 # 文章太长，截断按钮文字，直接在文章里加入<!--more-->就可以注释掉这里
-excerpt_link:  
+excerpt_link:
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
@@ -58,7 +58,7 @@ weixin: '/img/wc.png'
 # # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有copyright不为false的文章均有版权声明
 # copyright_type: 2
 
-## 版权声明   
+## 版权声明
 declare_type: 1      # 0:关闭  1，declare: true则开启 2，全都开启
 licensee_url: https://creativecommons.org/licenses/by-nc-sa/4.0/          # 当前应用的版权协议地址。
 licensee_name: '知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议'  # 版权协议的名称
@@ -68,7 +68,7 @@ licensee_img: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png      # 版�
 beian: 豫ICP备18033287号-1
 
 # 又拍云开发者计划图片链接，没有请留空
-upyun: 
+upyun:
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -88,7 +88,10 @@ top: true
 #网站图标，icon格式
 favicon: '/img/timg.ico'
 
-#你的头像url
+# 头像旋转
+Rotate: true
+
+# 你的头像url
 avatar: '/img/me.jpg'
 
 #是否开启分享，如果不需要建议不要开启
@@ -105,8 +108,8 @@ share_jia: true
 # wangyiyun: false
 
 #3、畅言
-#changyan_appid: 
-#changyan_conf: 
+#changyan_appid:
+#changyan_conf:
 
 # #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 # disqus: false
@@ -117,22 +120,22 @@ share_jia: true
 # gitment_oauth:
 #   client_id: '5fe457b2567518212ac2'           #client ID
 #   client_secret: '3fe6e74088cfa7321be32eb5e3584accb5d39af4'       #client secret
-  
-  
+
+
 #6、Valine https://valine.js.org
-# valine: 
+# valine:
 #   enable: true
 #   #Leancloud应用的appId
-#   appid: 5y0LtXIrx2FacaeYoLzmg7sv-gzGzoHsz 
+#   appid: 5y0LtXIrx2FacaeYoLzmg7sv-gzGzoHsz
 #   #Leancloud应用的appId
-#   appkey: XoG9OJyQ6eLXMny0nuy8tQAT 
-#   verify: true 
+#   appkey: XoG9OJyQ6eLXMny0nuy8tQAT
+#   verify: true
 #   #验证码
-#   notify: true 
+#   notify: true
 #   #评论回复提醒
 #   avatar: '/mm/identicon/monsterid/wavatar/retro/hide'
 #   #评论列表头像样式：'/mm/identicon/monsterid/wavatar/retro/hide'
-#   avatar_cdn: '' 
+#   avatar_cdn: ''
 #   #头像CDN
 #   placeholder: '友情提醒，留下正确的邮箱地址可以第一时间获取评论反馈' #评论框占位符
 #   pageSize: 10 #评论分页
@@ -145,20 +148,20 @@ style:
   #header: '#00000'
   # 右滑板块背景
   slider: 'linear-gradient(200deg,#e7eefc,#54c8ff)'
-  
+
 # slider的设置
 slider:
   # 是否默认展开tags板块
   showTags: true
 
 # MarkDown文件下载地址,如：http://md.xxwhite.com，以后会写文章教怎么上传原文，不会请留空
-mdhost: 
+mdhost:
 
 #pangu.js 用于自动加空格
 pangu: true
 
 #7、配置gitalk
-gitalk: 
+gitalk:
   enable:  true #用来做启用判断可以不用
   githubID:  Anyway521
   repo:  'comments'
@@ -167,7 +170,7 @@ gitalk:
   ClientSecret:  '9c64bdc5ec597bb7e86fd6d41884603c2076d1f2'
   adminUser:  Anyway521
   distractionFreeMode:  true
-  
+
 #8、百度统计
 baidu_tongji: true
 
@@ -189,5 +192,5 @@ friends:
   拳皇Wing1.9.1: 'https://cdn.anyway1314.cn/KoF-wing1.9.1.swf'
   下载本站App: 'https://cdn.anyway1314.cn/DRSN_1.2.apk'
 
-#在这里添加任何配置，都加在“aboutme”的上面，否则会出问题 
+#在这里添加任何配置，都加在“aboutme”的上面，否则会出问题
 aboutme: <br>我必须承认<br><br>生命中大部分时光是属于孤独的，<br><br>努力成长<br><br>是在孤独里可以进行的最好的游戏。

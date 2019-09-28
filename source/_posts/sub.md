@@ -9,7 +9,7 @@ reward: true
 declare: true
 ---
 
-![dfsa57375fd.jpg](https://cdn.anyway1314.cn/imagedfsa57375fd.jpg)
+![dfsa57375fd.jpg](https://cdn.anyway1314.cn/imagedfsa57375fd.jpg-title)
 
 Yilia主题自带是社交图标比较少，这里给出一种简单、  
 不用 webpack 打包的方式，添加自己需要的社交图标。

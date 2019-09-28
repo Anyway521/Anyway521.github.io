@@ -8,49 +8,56 @@
 		bglist[4] = "https://cdn.anyway1314.cn/imagetimfewafeg.jpg";
 		bglist[5] = "https://cdn.anyway1314.cn/image20180202235236_5ShMs.jpeg";
 	var i = 0;
-	var bkg=document.getElementsByClassName("left-col")[0]; 
-	// bkg.style.background="url(https://cdn.anyway1314.cn/imageba.jpg)";  
+	var bkg=document.getElementsByClassName("left-col")[0];
+	// bkg.style.background="url(https://cdn.anyway1314.cn/imageba.jpg)";
 			function time(){
-				   i<5?i++:i=0; 
-				   bkg.style.background="url("+bglist[i]+")"; 
+				   i<5?i++:i=0;
+				   bkg.style.background="url("+bglist[i]+")";
 			}
 			setInterval(time,3000);
 	}
 </script>
-
 <div class="overlay"></div>
 <div class="intrude-less">
 	<header id="header" class="inner" style="font-size:15px;;font-weight: 500;">
-		<a href="<%=theme.root%>" class="profilepic">
-			<img src="<%=theme.avatar%>" class="js-avatar">
+
+			<% if(theme.Rotate == true){ %>
+			<div id="ds-reset" class="ds-post-self">
+			<div class="ds-avatar" >
+			<img src="<%=theme.avatar%>">
+			<% } else if(theme.Rotate == false){%>
+			<a href="<%=theme.root%>" class="profilepic"><img src="<%=theme.avatar%>" class="js-avatar"></a>
+			<%}%>
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="<%=theme.root%>"><%=theme.author%></a></h1>
 		</hgroup>
 		<% if (theme.subtitle){ %>
-		<!-- <p class="header-subtitle"><%=theme.subtitle%></p> -->
-		<!--这里是一言API-->
-		<!-- <a id="hitokoto" href="https://hitokoto.cn/api" style="font-size: 16px;color: aliceblue"></a> -->
-		<a id="hitokoto" href="https://anyway1314.cn"  onmouseover="this.style.color='#4B0082';" onmouseout="this.style.color='aliceblue';">_(:з」∠)_ 加载中...</a>
-			<!-- 这两条是为了兼容IE -->
-			<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
-			<!--End-->
-		<script>
-		fetch('https://v1.hitokoto.cn')
-			.then(function (res){
-			return res.json();
-			})
-			.then(function (data) {
-			var hitokoto = document.getElementById('hitokoto');
-			hitokoto.innerText = data.hitokoto; 
-			})
-			.catch(function (err) {
-			console.error(err);
-			})
-		</script>
+		    <!--这里是一言API-->
+		    <!-- <a id="hitokoto" href="https://hitokoto.cn/api" style="font-size: 16px;color: aliceblue"></a> -->
+		    <a id="hitokoto" href="https://anyway1314.cn"  onmouseover="this.style.color='#4B0082';" onmouseout="this.style.color='aliceblue';">_(:з」∠)_ 加载中...</a>
+		    <!-- 这两条是为了兼容IE -->
+		    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+		    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+		    <!--End-->
+	        <script>
+	        fetch('https://v1.hitokoto.cn')
+		   .then(function (res){
+		   return res.json();
+		   })
+		   .then(function (data) {
+		   var hitokoto = document.getElementById('hitokoto');
+		   hitokoto.innerText = data.hitokoto;
+		   })
+		   .catch(function (err) {
+		   console.error(err);
+		   })
+	        </script>
+	        <!-- 一言结尾 -->
+           <!-- 如果不想用一言，那就注释掉上面的，改用下面一行 -->
+			<!-- <p class="header-subtitle"><%=theme.subtitle%></p> -->
 		<%}%>
-		
+
 		<nav class="header-menu">
 			<ul>
 			<% for (var i in theme.menu){ %>
@@ -64,7 +71,7 @@
     			<a q-on="click: openSlider(e, '<%-i%>')" href="javascript:void(0)"><%= theme.smart_menu[i] %></a>
     			<% } %>
 			<%}%>
-			
+
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -73,5 +80,5 @@
 		        <%}%>
 			</div>
 		</nav>
-	</header>		
+	</header>
 </div>

@@ -9,7 +9,7 @@ reward: true
 declare: true
 ---
 
-![qC6S.jpg](https://cdn.anyway1314.cn/imageqC6S.jpg)
+![qC6S.jpg](https://cdn.anyway1314.cn/imageqC6S.jpg-title)
 
 一段不让别人查看你页面内容的代码, ╮(╯▽╰)╭ 然鹅...<!-- more -->
 其实对老鸟来说，形同虚设 ╮(╯_╰)╭ 

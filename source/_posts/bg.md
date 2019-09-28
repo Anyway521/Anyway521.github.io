@@ -8,7 +8,7 @@ reward: true
 declare: true
 ---
 
-![134522_爱奇艺.jpg](https://cdn.anyway1314.cn/image134522_爱奇艺.jpg)
+![134522_爱奇艺.jpg](https://cdn.anyway1314.cn/image134522_爱奇艺.jpg-title)
 
 左侧默认的背景是纯色的，这里给出一种方法更改为图片背景。
 <!-- more -->

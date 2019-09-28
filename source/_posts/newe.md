@@ -9,7 +9,7 @@ reward: true
 declare: true
 ---
 
-![6b1htm0.jpg](https://cdn.anyway1314.cn/image6b1htm0.jpg)
+![6b1htm0.jpg](https://cdn.anyway1314.cn/image6b1htm0.jpg-title)
 
 改 “友链” 为 “ZONE” ,增加了一些以前收藏的特效页面。  
 顺便说说怎么往博客添加自定义的HTML文件。

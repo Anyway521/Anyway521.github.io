@@ -5,7 +5,7 @@ toc: false
 abbrlink: 52217
 date: 2019-05-14 00:22:22
 ---
-![vscode.png](https://cdn.anyway1314.cn/imagevscode.png)
+![vscode.png](https://cdn.anyway1314.cn/imagevscode.png-title)
 
 初见VSCode,就被它的外表所征服╰(*°▽°*)╯。  
 用了一阵子发现，不仅是好看，这款IDE确实有他的独到之处

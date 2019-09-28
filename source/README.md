@@ -1,13 +1,13 @@
 blog.anyway1314.cn
 ================
 
-简约优雅的个人博客，点击 [我的博客](http://blog.anyway1314.cn/) 查看效果。  
-Powered by [yilia](http://litten.me/)    
+简约优雅的个人博客，点击 [我的博客](http://blog.anyway1314.cn/) 查看效果。
+Powered by [yilia](http://litten.me/)
 
 
 ![20190718133332.png](https://cdn.anyway1314.cn/image20190718133332.png)
 
-## 2019.7.15  
+## 2019.7.15
 
 基于yilia源生主题优化，没有进行过多的定制修改（个人还是喜欢简洁风格）。
 
@@ -21,7 +21,7 @@ Powered by [yilia](http://litten.me/)
 - `归档`页面配色更改为 `azure`
 - 移动端配色优化
 
-—————————————————————   
+—————————————————————
 
 ## 2019-7-21主题美化
 
@@ -35,7 +35,7 @@ Powered by [yilia](http://litten.me/)
 
 [配色参考](http://www.peise.net/2018/0920/6099.html)
 
-—————————————————————   
+—————————————————————
 ## 2019-7-22细节优化
 ### PC端
 ![QQ截图20190726180818.png](https://cdn.anyway1314.cn/imageQQ截图20190726180818.png)
@@ -47,8 +47,8 @@ Powered by [yilia](http://litten.me/)
     - github: #afb6ca->#bf59f3
     - qq: #34baad->#5cf54abf
     - mail: #e15280-> #f45a8d
-    - bilibili:  #e15280-> #f45a8d   
-- 更改了图标透明度(opacity:0.7 -> 1)    
+    - bilibili:  #e15280-> #f45a8d
+- 更改了图标透明度(opacity:0.7 -> 1)
 - 优化了点触感
 ## 2019-7-26美化、修复Bug
 
@@ -61,7 +61,7 @@ Powered by [yilia](http://litten.me/)
 - 浏览器工具中提供的#5cf54abf在移动端不显示、更改为#5cf54a
 - body,button,input,select,textarea配色调整为azure
 - table增加颜色：chocolate
-- 标题增加hover #00d7f3 日期#00a8f3 
+- 标题增加hover #00d7f3 日期#00a8f3
 - mid-col，背景颜色改为#eee
 - 移动端杂项优化
 
@@ -78,7 +78,7 @@ Powered by [yilia](http://litten.me/)
     - linear-gradient(200deg,#1E90FF->#b4d8d8,#B0C4DE->#66c3d5)
 - 社交图标优化
 - 左边栏字体`hover`: `#ffee93` ->`#4B0082`
-- 文章元素`hover`:`#00d7f3`,`#00a8f3`均改为`#0f66bc` 
+- 文章元素`hover`:`#00d7f3`,`#00a8f3`均改为`#0f66bc`
 - 关闭字数统计
 - 一言api新增鼠标点触属性(同左边栏字体)
 - 字数统计配色`#04338c`
@@ -103,7 +103,7 @@ Powered by [yilia](http://litten.me/)
 - 文章字体调节
     - h1 1.75rem -> 1.625rem（约26px,与文章标题一致）
     - h2 1.4375 rem -> 1.4rem
-    - h1~h6:weight 900 -> 400 
+    - h1~h6:weight 900 -> 400
 - PC端&移动端一言(Hitokoto)api优化
 
 ## 2019-9-15 主题优化
@@ -115,7 +115,7 @@ Powered by [yilia](http://litten.me/)
     - 代码段：
          - 字体颜色：#c7254e
          - 背景色以及背景线条： #f9f2f4
-    - 标题（h1-h6）:weight改为600     
+    - 标题（h1-h6）:weight改为600
 - 左侧栏更改不太适配的背景图片
 - (新)主页标题weight:500,打开文章后，h1还是weight:600.
    - .article-inner h1.article-title, .article-title{ 改为.article-title{
@@ -127,10 +127,23 @@ Powered by [yilia](http://litten.me/)
 
 ![QQ截图20190917002518.png](https://cdn.anyway1314.cn/imageQQ截图20190917002518.png)
 
+## 2019-9-28
+- 加入头像旋转：
+
+<video src="https://cdn.anyway1314.cn/201909220711.mp4" controls="controls">
+your browser does not support the video tag
+</video>
+
+
+- 可在主题目录下`_config.yml`里设置`Rotate: true`
+
+![20190928221402.png](https://cdn.anyway1314.cn/image20190928221402.png)
+
+
 
 ***
-联系方式：  
-  QQ : 2411535738  
+联系方式：
+  QQ : 2411535738
   TELL : 15239931893
 
 ***

@@ -8,7 +8,7 @@ abbrlink: 25766
 date: 2019-06-12 09:19:07
 ---
 
-![yilia.jpg](https://cdn.anyway1314.cn/imageyilia.jpg)
+![yilia.jpg](https://cdn.anyway1314.cn/imageyilia.jpg-title)
 
 分享一些博客基础的配置((*^▽^*))<br>参考了一些博客，Ծ‸Ծ一点一点填坑~
 <!--more-->

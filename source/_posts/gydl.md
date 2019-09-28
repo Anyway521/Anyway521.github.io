@@ -10,7 +10,7 @@ toc: false
 declare: true
 ---
 
-![u=2618985800.jpg](https://cdn.anyway1314.cn/imageu=2618985800.jpg)
+![u=2618985800.jpg](https://cdn.anyway1314.cn/imageu=2618985800.jpg-title)
 
 Wordpress主站点内容已打包，博客移到主域名`anyway1314.cn`下。
 <!-- more -->

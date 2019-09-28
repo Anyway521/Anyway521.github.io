@@ -8,7 +8,7 @@ toc: true
 abbrlink: 59308
 date: 2019-07-02 10:55:22
 ---
-![coding.jpg](https://cdn.anyway1314.cn/imagecoding.jpg)
+![coding.jpg](https://cdn.anyway1314.cn/imagecoding.jpg-title)
 
 考虑到github国内访问速度，以及偶尔"404"的尴尬情况，把博客项目<br>也部署到Coding。
 <!--more-->

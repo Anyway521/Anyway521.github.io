@@ -7,7 +7,7 @@ toc: true
 declare: true
 ---
 
-![xmindzen.jpg](https://cdn.anyway1314.cn/imagexmindzen.jpg)
+![xmindzen.jpg](https://cdn.anyway1314.cn/imagexmindzen.jpg-title)
 
 一款赏心悦目的软件—“XMind ZEN”,构建思维导图简直不要太舒服 ٩(๑^o^๑)۶
 

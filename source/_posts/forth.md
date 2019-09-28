@@ -9,7 +9,7 @@ abbrlink: 12811
 date: 2019-06-03 23:33:24
 ---
 
-![night.jpg](https://cdn.anyway1314.cn/imagenight.jpg)
+![night.jpg](https://cdn.anyway1314.cn/imagenight.jpg-title)
 
 夜深人静，周围的人都进入梦乡时，我想我该静下来，思考一些事情了......
 

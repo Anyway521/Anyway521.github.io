@@ -9,7 +9,7 @@ date: 2019-07-13 11:40:07
 reward: true
 declare: true
 ---
-![qiniu.jpeg](https://cdn.anyway1314.cn/imageqiniu.jpeg)
+![qiniu.jpeg](https://cdn.anyway1314.cn/imageqiniu.jpeg-title)
 
 文件存储的方式让图片耗费了大量的流量资源  
 为了提高网站的加载速度，图床不失为一种好的选择!

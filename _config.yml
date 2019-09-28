@@ -32,9 +32,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 # 跳过渲染，第一次用这个主题可以注释掉
-skip_render: 
-  - "README.md"  
-  - "ZONE/**"  
+skip_render:
+  - "README.md"
+  - "ZONE/**"
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -51,7 +51,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting 主页分页文章数
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -60,7 +60,7 @@ index_generator:
   path: ''
   per_page: 6
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -96,7 +96,7 @@ plugins: hexo-generater-feed
 
 theme: yilia-lightblue
 
-jsonContent: 
+jsonContent:
     meta: false
     pages: false
     posts:
@@ -119,7 +119,7 @@ jsonContent:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: 
+  repository:
       github: git@github.com:Anyway521/anyway521.github.io.git
       coding: git@git.dev.tencent.com:Des_tiny/Des_tiny.git
   branch: master

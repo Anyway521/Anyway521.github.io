@@ -6,7 +6,7 @@ abbrlink: 61971
 date: 2019-05-13 23:29:24
 ---
 
-![8.jpg](https://cdn.anyway1314.cn/image8.jpg)
+![8.jpg](https://cdn.anyway1314.cn/image8.jpg-title)
 
 不像Wordpress，这是个更适合搭建博客的平台~  
 "Github Pages + Hexo + Vscode"打开了一个新世界! ! !

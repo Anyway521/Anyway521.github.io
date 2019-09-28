@@ -8,7 +8,7 @@ abbrlink: 2ee2703d
 date: 2019-07-18 18:35:26
 ---
 
-![togitalk.png](https://cdn.anyway1314.cn/imagetogitalk.png)
+![togitalk.png](https://cdn.anyway1314.cn/imagetogitalk.png-title)
 
 Valine用了没几天，感觉还是不习惯￣へ￣  
 果断换回我的Gitalk(/≧▽≦)/
