@@ -139,6 +139,12 @@ your browser does not support the video tag
 
 ![20190928221402.png](https://cdn.anyway1314.cn/image20190928221402.png)
 
+## 2019-11-22
+修复错误 
+
+![20191122233923.png](https://cdn.anyway1314.cn/image20191122233923.png)
+
+- .article-inner{border-color: azure;background: azure;} 改为：border-color:#d8e4e4d4;~~background: azure~~
 
 
 ***

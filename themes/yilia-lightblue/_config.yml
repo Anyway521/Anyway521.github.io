@@ -1,12 +1,10 @@
 # Header
-
 menu:
   主页: '/'
   #留言: '/MessageBoard/'
   归档: '/archives/'
   # 分类: '/categories/'
   #关于: '/about/'
-
 
 # SubNav
 subnav:
@@ -32,11 +30,10 @@ subnav:
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
 # 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
 root:
-
 # Content
 
 # 文章太长，截断按钮文字，直接在文章里加入<!--more-->就可以注释掉这里
-excerpt_link:
+excerpt_link:   
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
@@ -180,8 +177,8 @@ baidu_tongji: true
 #smart_menu:
 #  friends: false
 smart_menu:
-  innerArchive: '所有文章'
-  friends: 'ZONE'
+  innerArchive: '所有文章 '
+  friends: 'ZONE '
   aboutme: '关于我'
 
 friends:
@@ -189,7 +186,6 @@ friends:
   落雪特效: 'https://anyway1314.cn/ZONE/drsn'
   爱心表白特效: 'https://anyway1314.cn/ZONE/express'
   Canvas动态背景: 'https://anyway1314.cn/ZONE/point'
-  拳皇Wing1.9.1: 'https://cdn.anyway1314.cn/KoF-wing1.9.1.swf'
   下载本站App: 'https://cdn.anyway1314.cn/DRSN_1.2.apk'
 
 #在这里添加任何配置，都加在“aboutme”的上面，否则会出问题
