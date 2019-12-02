@@ -75,7 +75,8 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 6
+#归档分页数
+per_page: 7
 pagination_dir: page
 
 # Counting words
