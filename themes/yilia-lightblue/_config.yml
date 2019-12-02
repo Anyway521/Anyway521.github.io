@@ -186,6 +186,9 @@ friends:
   落雪特效: 'https://anyway1314.cn/ZONE/drsn'
   爱心表白特效: 'https://anyway1314.cn/ZONE/express'
   Canvas动态背景: 'https://anyway1314.cn/ZONE/point'
+  Git中文参考文档: 'https://git-reference.readthedocs.io/zh_CN/latest/'
+  Hexo参考文档: 'https://hexo.io/docs/'
+  MarkDown中文文档: 'https://markdown-zh.readthedocs.io/en/latest/'
   下载本站App: 'https://cdn.anyway1314.cn/DRSN_1.2.apk'
 
 #在这里添加任何配置，都加在“aboutme”的上面，否则会出问题
