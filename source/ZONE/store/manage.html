@@ -1,0 +1,267 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- 网站ico -->
+    <link rel="shortcut icon" href="images/top.ico">
+    <!-- 引入Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="css/mgr.css">
+
+    <title>管理界面</title>
+</head>
+
+<body>
+<!-- header -->
+<header>
+    <nav class="navbar navbar-default" >
+        <div class="container">
+            <div class="navbar-header">
+                <div class="logo">
+                <a href="index.html" class="navbar-brand" ><img src="images/logo.jpg"  alt=""></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">按钮</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- 导航链接、表单和其他内容切换 -->
+            <div class="collapse navbar-collapse" id="navbar-collapse" style="border-color:#ffffff">
+                <ul class="nav navbar-nav">
+                    <li><a href="alldate.php">进货登记</a></li>
+                    <li><a href="alldate.php">提货登记</a></li>
+                    <li><a href="alldate.php">员工管理</a></li>
+                    <li><a href="alldate.php">货物管理</a></li>
+                    <li><a href="alldate.php">分类管理</a></li>
+                </ul>
+            </div>
+         </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</header>
+<!-- header -->
+
+<!-- card：业务提示区 -->
+<div class="container">
+<div class="row">
+    <div class="col-md-8">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="dashboard-info row">
+                    <div class="info-text col-md-6">
+                        <h3 class="card-title">Welcome back Dekra!</h3>
+                        <p>Manager! 欢迎回来，请继续您的管理工作.</p>
+                        <ul id='card-left-text'>
+                            <li>检查一下仓库的运转情况</li>
+                            <li>更新一下设备状态</li>
+                            <li>欢迎下载，管理员专属App</li>
+                        </ul>
+                        <a href="#" class="btn btn-warning m-t-xs">了解更多</a>
+                    </div>
+                    <div class="info-image col-md-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>      
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title"><h3>最新报表</h3></div>
+                
+                <div align="center">
+                    <img src="images/mgr/list1.png" alt="list">
+                </div>
+            </div>
+        </div>
+    </div>                      
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="col-md-4">
+        <div class="card stat-card">
+            <div class="card-body">
+                <h5 class="card-title">新合作商</h5>
+                <h2 class="float-right">45.6K</h2>
+                <p>From last week</p>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card stat-card">
+            <div class="card-body">
+                <h5 class="card-title">新增货物</h5>
+                <h2 class="float-right">14.3K</h2>
+                <p>Orders in waitlist</p>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card stat-card">
+            <div class="card-body">
+                <h5 class="card-title">累积收入</h5>
+                <h2 class="float-right">45.6$</h2>
+                <p>For last 30 days</p>
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+<!-- card 业务提示结束-->
+
+
+
+
+<!-- 更新状态条 -->
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="alert alert-warning m-b-lg" role="alert">
+            Data has been updated 23 min ago.
+        </div>
+    </div>
+</div>
+</div>
+<!-- 更新状态条 -->
+
+
+
+<!-- 信息区 -->
+<div class="fun">
+    <div class="container">
+        <!-- 栅格系统 ，让元素适应大中小屏幕-->
+        <div class="col-md-3 col-sm-6">
+            <h3>个人信息</h3>
+            <div align="center"><img src="images/fun/k11.jpg" class="img-responsive" alt="nick"></div>
+            <!-- 为了适应在中屏幕大小下的图片显示效果，让图片居中 -->
+            <div>
+                <p class="glyphicon glyphicon-thumbs-up"> 耐克公司，正式成立于1972年，由比尔·鲍尔曼和校友菲利浦·奈特共同创立</p>
+                <div class="cur">
+                    <span ><a class="morebtn" href="#">安全高效，就选Nick！</a></span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3>业务走向</h3>
+            <div align="center"><img src="images/fun/k22.jpg" class="img-responsive" alt="fast"></div>
+            <div>
+                <p class="glyphicon glyphicon-thumbs-up">耐克公司，正式成立于1972年，由比尔·鲍尔曼和校友菲利浦·奈特共同创立</p>
+                <div class="cur">
+                    <span><a class="morebtn" href="#">秒杀顺丰，更快更强！</a></span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3>数据分析</h3>
+            <div align="center"><img src="images/fun/k33.jpg" class="img-responsive" alt="cy"></div>
+            <div>
+                <p class="glyphicon glyphicon-thumbs-up"> 耐克公司，正式成立于1972年，由比尔·鲍尔曼和校友菲利浦·奈特共同创立</p>
+                <div class="cur">
+                    <span><a class="morebtn " href="#">新时代，我要阿里巴巴！</a></span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3>行情走势</h3>
+            <div align="center"><img src="images/fun/k44.jpg" class="img-responsive" alt="cy"></div>
+            <div>
+                <p class="glyphicon glyphicon-thumbs-up"> 耐克公司，正式成立于1972年，由比尔·鲍尔曼和校友菲利浦·奈特共同创立</p>
+                <div class="cur">
+                    <span><a class="morebtn " href="#">新时代，我要阿里巴巴！</a></span>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--信息区结束 -->
+
+
+
+<div class="content_white">
+    <h2>How to Content With Us</h2>
+    <p>If you need or want to seek opportunities for cooperation, please contact us in time</p>
+</div>
+
+
+<!-- 联系我们 -->
+<div class="contact">
+    <div class="container">
+     <div class="row">
+        <!-- 栅格系统 ，让元素适应大中小屏幕-->
+        <div class="col-md-4 col-sm-6">
+            <ul class="social_left">
+              <li class="social"><a href="#"><img src="images/social/QQ.png"> </a>&nbsp &nbsp </li>
+              <li class="social"><h4><a href="#">QQ客服交谈</a></h4>
+                  <p>企业QQ:123123123</p>
+              </li>
+              <div class="clearfix"> </div>
+            </ul>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <ul class="social_left">
+              <li class="social"><a href="#"><img src="images/social/weibo.png"> </a>&nbsp &nbsp </li>
+              <li class="social"><h4><a href="#">官方微博</a></h4>
+                  <p>新浪微博：112414144</p>
+              </li>
+              <div class="clearfix"> </div>
+            </ul>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <ul class="social_left">
+              <li class="social"><a href="#"><img src="images/social/weixin.png"> &nbsp &nbsp </a></li>
+              <li class="social"><h4><a href="#">微信客服交谈</a></h4>
+                  <p>官方微信：124445454</p>
+              </li>
+              <div class="clearfix"> </div>
+            </ul>
+        </div>
+        <!-- <img id="qrcode" src="images/qrcode.png"> --> 
+        <!-- 时间不够，不加二维码了 -->
+     </div>
+     
+    </div>
+</div>
+
+<!-- 联系结尾 -->
+
+
+
+
+<!-- footer-->
+<footer class="footer">
+    <div class="container">
+        <div>
+            <p style="text-align: center;">Copyrights © 2020 Bootstrap 仓储物资管理系统  | 版权所有 <a href="#"></a></p>
+        </div>
+    </div>
+</footer>
+<!-- footer-->
+<!-- jQuery-->
+<script src="lib/jquery/jquery-1.11.0.min.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
