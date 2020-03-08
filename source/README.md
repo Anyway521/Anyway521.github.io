@@ -139,6 +139,50 @@ your browser does not support the video tag
 
 ![20190928221402.png](https://cdn.anyway1314.cn/image20190928221402.png)
 
+—————————————————————
+
+## 2019-11-10
+ 	
+- 左边栏智能菜单字体
+.left-col #header .header-smart-menu{}   font-weight:600
+
+- 左侧栏：主页、归档:
+.left-col #header .header-menu li a{}  font-weight:600;font-size:14px
+
+- 归档页面标题：
+.archives .archive-article-title{} :font-size: 18px ->20px
+
+- /* 一言api */
+#hitokoto{
+    font-size: 15px;
+    font-weight: 400;
+}
+- 代码块字体
+.article-entry .highlight, .article-entry pre{} font-size:.9em ->14px
+
+- 文章字体
+body,button,input,select,textarea{
+font-size:1em -> 1.05em
+
+
+- a标签hover
+a:hover{
+   color:#E91E63;
+}
+
+
+- 左边栏hover:
+.left-col #header a:hover{color:#FFEB3B  !important}
+/!important：提权，不与a:hover{}冲突/
+
+![QQ截图20191110154857.png](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uYW55d2F5MTMxNC5jbi9pbWFnZVFRJUU2JTg4JUFBJUU1JTlCJUJFMjAxOTExMTAxNTQ4NTcucG5n?x-oss-process=image/format,png)
+
+—————————————————————  
+修复Bug
+- Bug:头像旋转时图标浮动
+
+  ![bug.gif](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uYW55d2F5MTMxNC5jbi9pbWFnZWJ1Zy5naWY)
+
 ## 2019-11-22
 修复错误 
 
@@ -147,10 +191,16 @@ your browser does not support the video tag
 - .article-inner{border-color: azure;background: azure;} 改为：border-color:#d8e4e4d4;~~background: azure~~
 
 
+## 2020-03-03
+优化社交图标 
+
+![GIF202020sskf.gif](https://cdn.anyway1314.cn/imageGIF202020sskf.gif)
+
+
+
 ***
 联系方式：
   QQ : 2411535738
   TELL : 15239931893
 
 ***
-

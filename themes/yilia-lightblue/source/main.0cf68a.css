@@ -624,7 +624,8 @@ i {
 }
 
 .icon-qq:before {
-	content: "\E62D"
+	content: "\E62D";
+	color: white;
 }
 
 .icon-weibo:before {
@@ -672,7 +673,8 @@ i {
 }
 
 .icon-rss:before {
-	content: "\E877"
+	content: "\E877";
+	color: white;
 }
 
 .icon-price-tags:before {
@@ -692,7 +694,8 @@ i {
 }
 
 .icon-github:before {
-	content: "\E735"
+	content: "\E735";
+	color: white;
 }
 
 .icon-film:before {
@@ -740,7 +743,8 @@ i {
 }
 
 .icon-bilibili:before {
-	content: "\E622"
+	content: "\E622";
+	color: white;
 }
 
 .icon-psn:before {
@@ -748,7 +752,8 @@ i {
 }
 
 .icon-csdn:before {
-	content: "\E6C8"
+	content: "\E6C8";
+	color: white;
 }
 
 body,button,input,select,textarea {
@@ -1193,7 +1198,8 @@ pre .css~* .id,pre .id {
 }
 
 .tagcloud a:hover {
-	opacity: .8
+	opacity: .8;
+	color:white;
 }
 
 .tagcloud a:before {
@@ -1380,7 +1386,7 @@ pre .css~* .id,pre .id {
 }
 
 #header .header-nav .social a {
-	border-radius: 50%;
+	border-radius: 10%;
 	display: -moz-inline-stack;
 	display: inline-block;
 	vertical-align: middle;
@@ -1398,7 +1404,7 @@ pre .css~* .id,pre .id {
 }
 
 #header .header-nav .social a:hover {
-	opacity: 1
+	opacity: 1;
 }
 
 #header .header-nav .social a.weibo {
@@ -1425,7 +1431,8 @@ pre .css~* .id,pre .id {
 }
 
 #header .header-nav .social a.rss:hover {
-	border: 2px solid #cf5d0f
+	border: 2px solid #cf5d0f;
+	background: #cf5d0f;
 }
 
 #header .header-nav .social a.github {
@@ -1434,7 +1441,8 @@ pre .css~* .id,pre .id {
 }
 
 #header .header-nav .social a.github:hover {
-	border: 2px solid #8f0fc2
+	border: 2px solid #8f0fc2;
+	background: #8f0fc2;
 }
 
 #header .header-nav .social a.facebook {
@@ -1488,16 +1496,18 @@ pre .css~* .id,pre .id {
 }
 
 #header .header-nav .social a.csdn:hover {
-	border: 1px solid #ca0c16
+	border: 1px solid #ca0c16;
+	background: #ca0c16;
 }
 
 #header .header-nav .social a.bilibili {
 	background: #f45a8d;
-	border: 1px solid #f45a8d
+	border: 2px solid #f45a8d
 }
 
 #header .header-nav .social a.bilibili:hover {
-	border: 1px solid #f01b62
+	border: 2px solid #f01b62;
+	background: #f01b62;
 }
 
 #header .header-nav .social a.zhihu {
@@ -1551,7 +1561,8 @@ pre .css~* .id,pre .id {
 }
 
 #header .header-nav .social a.qq:hover {
-	border: 1px solid #3da5fe
+	border: 1px solid #3da5fe;
+	background: #3da5fe;
 }
 
 #header .header-nav .social a.psn {

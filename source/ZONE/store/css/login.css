@@ -32,7 +32,7 @@ form {
 
 
 input {
-    width: 276px;
+    width: 280px;
     height: 48px;
     border: 1px solid rgba(255,255,255,.4);
     border-radius: 6px;
@@ -114,3 +114,21 @@ input:focus {
        margin-top: 0px;
     }
 }
+@media (max-width:393px){
+    input {
+        width: inherit;
+        /* padding-right: 0px; */
+        padding-right: 0px;
+
+    }
+    .btn{
+        width: 110px;
+    }
+    #btn-r {
+        margin-left: 16px;
+    }
+    form{
+        width:inherit;
+    }
+}
+

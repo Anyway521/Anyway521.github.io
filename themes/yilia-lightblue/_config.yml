@@ -159,14 +159,14 @@ pangu: true
 
 #7、配置gitalk
 gitalk:
-  enable:  true #用来做启用判断可以不用
-  githubID:  Anyway521
-  repo:  'comments'
+  enable: true #用来做启用判断可以不用
+  githubID: Anyway521
+  repo: 'comments'
   # 存储博客评论的仓库地址，可以是存储博客的仓库
-  ClientID:  '5fe457b2567518212ac2'
-  ClientSecret:  '9c64bdc5ec597bb7e86fd6d41884603c2076d1f2'
-  adminUser:  Anyway521
-  distractionFreeMode:  true
+  ClientID: '5fe457b2567518212ac2'
+  ClientSecret: '9c64bdc5ec597bb7e86fd6d41884603c2076d1f2'
+  adminUser: Anyway521
+  distractionFreeMode: true
 
 #8、百度统计
 baidu_tongji: true
