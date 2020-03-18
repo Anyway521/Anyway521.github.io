@@ -86,7 +86,7 @@ top: true
 favicon: '/img/timg.ico'
 
 # 头像旋转
-Rotate: true
+Rotate: false
 
 # 你的头像url
 avatar: '/img/me.jpg'
@@ -143,7 +143,9 @@ style:
   # 头像上面的背景颜色
   # header: '#00BFFF'
   #header: '#00000'
-  # 右滑板块背景
+  #左侧背景图片切换，需要修改图片请到layout\_partial\left-col.ejs定制
+  bgTab: true
+  # 右滑板块背景渐变色
   slider: 'linear-gradient(200deg,#e7eefc,#54c8ff)'
 
 # slider的设置
@@ -178,15 +180,11 @@ baidu_tongji: true
 #  friends: false
 smart_menu:
   innerArchive: '所有文章 '
-  friends: 'ZONE '
+  friends: '友链 '
   aboutme: '关于我'
 
 friends:
   亦往沧劫: 'https://blog.todest.cn/'
-  落雪特效: 'https://anyway1314.cn/ZONE/drsn'
-  爱心表白特效: 'https://anyway1314.cn/ZONE/express'
-  仓库管理系统: 'https://anyway1314.cn/ZONE/store/index.html'
-  Canvas动态背景: 'https://anyway1314.cn/ZONE/point'
   Git中文参考文档: 'https://git-reference.readthedocs.io/zh_CN/latest/'
   Hexo参考文档: 'https://hexo.io/docs/'
   MarkDown中文文档: 'https://markdown-zh.readthedocs.io/en/latest/'

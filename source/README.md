@@ -196,7 +196,29 @@ a:hover{
 
 ![GIF202020sskf.gif](https://cdn.anyway1314.cn/imageGIF202020sskf.gif)
 
+## 2020-03-15
+标签云颜色：
+- color1-5 #ff945c   #cc8167    #ba8f6c #94635c #7b5d5f
+- newcolor #ff945c deepskyblue  #FFC107 #8BC34A #c8bf3d
 
+![20200315170906.png](https://cdn.anyway1314.cn/image20200315170906.png)
+
+移动端用渐变效果不好，改为纯色
+/* layout/patial/head.ejs有container.show的定义 */
+在main.xxxx.css添加：
+``` css
+@media screen and (max-width:800px){
+	#container.show{
+		background: #7ed6fe !important;
+	}
+}
+```
+![Scrshot_20200852-97.png](https://cdn.anyway1314.cn/imageScrshot_20200852-97.png)
+
+
+## 2020-03-18
+- 调整主页标题、文章标题（h1,h2）的大小，字体（font-weight:600->700）
+- .article-entry code (文本代码块增加左右边距)
 
 ***
 联系方式：
