@@ -804,7 +804,8 @@ body {
 	position: absolute;
 	right: 0;
 	min-height: 100%;
-	background: #edfbfb;
+	/* background: #edfbfb; */
+	background: #03a9f412;
 	left: 300px;
 	width: auto
 }
@@ -1246,11 +1247,11 @@ pre .css~* .id,pre .id {
 }
 
 .tagcloud a.color3 {
-	background: #FFC107
+	background: #de614db3
 }
 
 .tagcloud a.color3:before {
-	border-right-color: #FFC107
+	border-right-color: #de614db3
 }
 
 .tagcloud a.color4 {
@@ -2059,9 +2060,10 @@ pre .css~* .id,pre .id {
 .article {
 	margin: 30px;
 	position: relative;
-	border: 1px solid #d8e4e4d4;
+	/* border: 1px solid #d8e4e4d4;
 	border-top: 1px solid #d8e4e4d4;
-	border-bottom: 1px solid #d8e4e4d4;
+	border-bottom: 1px solid #d8e4e4d4; */
+	border: 1px solid #03a9f43b;
 	background: azure;
 	transition: all .2s ease-in
 }
@@ -3017,7 +3019,8 @@ pre .css~* .id,pre .id {
 	}
 
 	.mid-col {
-		left: 0
+		left: 0;
+		background: #03a9f412;
 	}
 
 	#header .header-nav,.mid-col {
@@ -3163,9 +3166,10 @@ pre .css~* .id,pre .id {
 	}
 
 	.article {
-		padding: 10px;
+		padding: 12px;
 		margin: 10px 0;
-		border: 0;
+		border: 10px solid #03a9f412;
+		border-radius: 15px;
 		font-size: 16px;
 		color: #03a9f4
 	}
