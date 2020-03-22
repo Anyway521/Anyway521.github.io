@@ -1247,11 +1247,11 @@ pre .css~* .id,pre .id {
 }
 
 .tagcloud a.color3 {
-	background: #de614db3
+	background: #7b5d5f
 }
 
 .tagcloud a.color3:before {
-	border-right-color: #de614db3
+	border-right-color: #7b5d5f
 }
 
 .tagcloud a.color4 {
@@ -3020,7 +3020,7 @@ pre .css~* .id,pre .id {
 
 	.mid-col {
 		left: 0;
-		background: #03a9f412;
+		background: rgba(3, 169, 244, 0.07);
 	}
 
 	#header .header-nav,.mid-col {
@@ -3168,7 +3168,7 @@ pre .css~* .id,pre .id {
 	.article {
 		padding: 12px;
 		margin: 10px 0;
-		border: 10px solid #03a9f412;
+		border: 10px solid rgba(3, 169, 244, 0.07);
 		border-radius: 15px;
 		font-size: 16px;
 		color: #03a9f4
