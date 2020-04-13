@@ -757,7 +757,8 @@ i {
 }
 
 body,button,input,select,textarea {
-	color: #03a9f4;
+	/* color: #03a9f4; */
+	color: navy;
 	background: azure;
 	font-family: 'Microsoft YaHei','SF Pro Display',Roboto,Noto,Arial,'PingFang SC',sans-serif;
 	font-size: 16px;
@@ -807,7 +808,8 @@ body {
 	/* background: #edfbfb; */
 	background: #03a9f412;
 	left: 300px;
-	width: auto
+	width: auto;
+	word-wrap:break-word
 }
 
 .mid-col.show {
@@ -888,11 +890,13 @@ body {
 
 .left-col #header .header-menu li a {
 	min-width: 300px;
-	font-size: 14px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .left-col #header .header-smart-menu {
 	font-size: 14px;
+	font-weight: bold;
 	margin-bottom: 20px
 }
 
@@ -2165,7 +2169,8 @@ pre .css~* .id,pre .id {
 
 .article-info-index.article-info {
 	padding-top: 20px;
-	margin: 30px 7.6923% 0;
+	/* margin: 30px 7.6923% 0; */
+	margin: 5px 7.6923%;
 	min-height: 72px;
 	border-top: 1px solid #ddd
 }
@@ -2487,7 +2492,8 @@ pre .css~* .id,pre .id {
 .share-icons a.share-outer {
 	border: none;
 	color: #fff;
-	background: #03a9f4;
+	/* background: #03a9f4; */
+	background: #1296db;
 	text-shadow: none
 }
 
@@ -2626,7 +2632,7 @@ pre .css~* .id,pre .id {
 .wrap-side-operation {
 	position: fixed;
 	right: 40px;
-	bottom: 65px;
+	bottom: 170px;
 	z-index: 999;
 	font-size: 14px
 }
@@ -2648,7 +2654,7 @@ pre .css~* .id,pre .id {
 }
 
 .jump-container:hover .icon-back {
-	background: rgba(36,193,246,.9)
+	background: #1296db
 }
 
 .jump-container,.toc-container {
@@ -2681,7 +2687,7 @@ pre .css~* .id,pre .id {
 .mod-side-operation__jump-to-top .icon-back {
 	transition: .3s;
 	color: #fff;
-	background: #ccc;
+	background: #2196F3;
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
 	font-size: 32px;
@@ -2697,13 +2703,13 @@ pre .css~* .id,pre .id {
 }
 
 .toc-container.tooltip-left {
-	background: #ccc;
+	background: #2196F3;
 	margin-top: 10px;
 	transition: .3s
 }
 
 .toc-container.tooltip-left:hover {
-	background: rgba(36,193,246,.9)
+	background: #1296db
 }
 
 .toc-container.tooltip-left .icon-font {
@@ -2747,7 +2753,9 @@ pre .css~* .id,pre .id {
 .toc-container.tooltip-left .tooltip-east .tooltip-content .toc-article {
 	max-height: 500px;
 	overflow-x: hidden;
-	overflow-y: auto
+	overflow-y: auto;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .toc-container.tooltip-left .tooltip-east .tooltip-content .toc-article li ol,.toc-container.tooltip-left .tooltip-east .tooltip-content .toc-article li ul {
@@ -2802,12 +2810,13 @@ pre .css~* .id,pre .id {
 
 .tooltip-left .tooltip-content {
 	position: absolute;
-	background: rgba(36,193,246,.9);
+	/* background: #1b4e9d; */
+	background: #1296db;
 	z-index: 9999;
 	width: 200px;
 	bottom: 50%;
 	margin-bottom: -10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	font-size: 1.1em;
 	text-align: center;
 	color: #fff;
@@ -2858,7 +2867,7 @@ pre .css~* .id,pre .id {
 	height: 2em;
 	top: 50%;
 	margin: -1em 0 0;
-	background: url(./fonts/tooltip.4004ff.svg) no-repeat 50%;
+	background: url(./fonts/catalog-tail.svg) no-repeat 50%;
 	background-size: 100%
 }
 
@@ -3121,7 +3130,7 @@ pre .css~* .id,pre .id {
 	.article-header {
 		border-left: none;
 		padding: 0;
-		border-bottom: 1px dotted #ddd
+		/* border-bottom: 1px dotted #ddd */
 	}
 
 	.article-header h1 {
@@ -3492,6 +3501,8 @@ pre .css~* .id,pre .id {
 		-webkit-box-orient: vertical;
 		padding: 0 24px
 	}
+
+	
 }/*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
 .pswp__button {
 	width: 44px;
@@ -4151,17 +4162,22 @@ a:hover {
 }
 
 /* 版权信息 */
-.declare {
+.copyright {
 	background-color: rgba(162, 223, 247, 0.925);
 	margin-top: 2em;
 	border-left: 3px solid #03a9f4;
 	padding: .5em 1em;
 }
+ul.copyright li {
+	font-size: 19px;
+	font-weight: bold;
+    line-height: 1.5;
+}
 
 /* 一言api */
 #hitokoto {
 	font-size: 16px;
-	font-weight: 400;
+	/* font-weight: bold; */
 }
 
 /* 头像旋转 */
@@ -4199,10 +4215,21 @@ a:hover {
 	transform: rotateZ(360deg);
 }
 
-/* 移动端用渐变效果不好，改为纯色 */
-/* layout/patial/head.ejs有container.show的定义 */
+
 @media screen and (max-width:800px){
+	/* 移动端用渐变效果不好，改为纯色 */
+	/* layout/patial/head.ejs有container.show的定义 */
 	#container.show{
 		background: #7ed6fe !important;
 	}
+	/* 版权声明移动端 */
+	li.copyright_article-url{
+		display: none;
+	}
+    ul.copyright li{
+		font-weight: normal;
+		font-size: 16px;
+	}
 }
+
+

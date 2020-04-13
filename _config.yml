@@ -81,7 +81,11 @@ pagination_dir: page
 
 # Counting words
 # 字数统计，看个人需要是否开启
-word_count: false
+word_count: true
+ 
+# 文章类型，在上面word_count: true的前提下可以进行开启
+# 文章类型具体在对应的md文件开头的 article_type属性进行定义。原创：article_type:0 ，，转载：article_type:1 :
+article_type: true
 
 # Security
 ## 文章加密
@@ -128,7 +132,7 @@ deploy:
 ## 备份，按需所取
 backup:
     type: git
-    message: yilia-lightblue-2020-03-22(移动端文章模块体现)
+    message: yilia-lightblue-2020-04-13(增加原创、转载标签)
     repository:
        github: git@github.com:Anyway521/Anyway521.github.io.git,lightblue
        coding: git@e.coding.net:Des_tiny/Des_tiny.git,lightblue

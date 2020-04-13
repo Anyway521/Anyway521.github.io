@@ -224,6 +224,14 @@ a:hover{
 - 调整中间背景配色，边框，标签颜色
 - 手机端调整文章样式，看起来更像一个完整的块
 - 附（发现手机端不支持带透明度的16禁止颜色，如#4d3d5d22,要用rgba(r,g,b,a)代替）
+- mid-col增加 word-wrap: break-word;
+
+## 2020-04-13
+- @media screen and (max-width: 800px) .article-header{~~border-bottom: 1px dotted #ddd;~~}
+- 新增“文章类型”标签：原创，转载，
+
+
+![20200413192928](https://cdn.anyway1314.cn/image20200413192928.png)
 
 ***
 联系方式：
