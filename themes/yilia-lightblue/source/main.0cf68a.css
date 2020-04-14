@@ -345,7 +345,7 @@ progress {
 a {
 	background: transparent;
 	text-decoration: none;
-	color: #08c;
+	color: #03A9F4;
 	word-wrap:break-word;
     word-break:break-all;
 }
@@ -1592,15 +1592,15 @@ pre .css~* .id,pre .id {
 }
 
 #page-nav .page-number {
-	width: 20px;
-	height: 25px;
+	width: 25px;
+	height: 26px;
 	background: #03a9f4;
 	display: inline-block;
 	color: #fff;
 	line-height: 25px;
 	font-size: 12px;
 	margin: 0 5px 30px;
-	border-radius: 2px
+	border-radius: 50%
 }
 
 #page-nav .page-number:hover {
@@ -1617,8 +1617,9 @@ pre .css~* .id,pre .id {
 }
 
 #page-nav .extend {
-	color: #03a9f4;
+	color: navy;
 	margin: 0 27px;
+	font-weight: bold;
 	opacity: 1
 }
 
