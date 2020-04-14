@@ -230,8 +230,18 @@ a:hover{
 - @media screen and (max-width: 800px) .article-header{~~border-bottom: 1px dotted #ddd;~~}
 - 新增“文章类型”标签：原创，转载，
 
-
 ![20200413192928](https://cdn.anyway1314.cn/image20200413192928.png)
+## 2020-04-14
+- 优化文章目录
+  
+![GIF202004141411](https://cdn.anyway1314.cn/imageGIF202004141411.gif)
+
+- 增加代码复制按钮
+
+![2020041401](https://cdn.anyway1314.cn/image2020041401.gif)
+- 左侧菜单增加图标
+  
+![20200414165618](https://cdn.anyway1314.cn/image20200414165618.png)
 
 ***
 联系方式：

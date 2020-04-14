@@ -142,7 +142,7 @@ style:
   # 头像上面的背景颜色
   # header: '#00BFFF'
   #header: '#00000'
-  #左侧背景图片切换，需要修改图片请到layout\_partial\left-col.ejs定制
+  #开启左侧背景图片切换，需要修改图片请到layout\_partial\left-col.ejs定制
   bgTab: true
   # 右滑板块背景渐变色
   slider: 'linear-gradient(200deg,#e7eefc,#54c8ff)'

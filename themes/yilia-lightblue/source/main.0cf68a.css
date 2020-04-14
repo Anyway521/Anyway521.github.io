@@ -345,7 +345,9 @@ progress {
 a {
 	background: transparent;
 	text-decoration: none;
-	color: #08c
+	color: #08c;
+	word-wrap:break-word;
+    word-break:break-all;
 }
 
 a:active {
@@ -401,7 +403,7 @@ svg:not(:root) {
 pre {
 	overflow: auto;
 	white-space: pre;
-	white-space: pre-wrap;
+	/* white-space: pre-wrap; */
 	word-wrap: break-word
 }
 
@@ -1022,7 +1024,7 @@ body {
 }
 
 .article-entry .gist .gist-file .gist-data .line-numbers,.article-entry .highlight .gutter pre,.article-entry .highlight .gutter pre .line {
-	color: #666
+	color: #00bcd4
 }
 
 .article-entry code,.article-entry pre {
@@ -2271,7 +2273,9 @@ pre .css~* .id,pre .id {
 	padding: 15px 20px;
 	margin-top: 10px;
 	border-left: 5px solid #657b83;
-	background: #f6f6f6
+	background: #f6f6f6;
+	word-wrap:break-word;
+    word-break:break-all;
 }
 
 .article-entry blockquote p {
@@ -2662,7 +2666,7 @@ pre .css~* .id,pre .id {
 	cursor: pointer;
 	width: 40px;
 	height: 40px;
-	opacity: .8
+	opacity: 1
 }
 
 .jump-plan-container {
@@ -2728,12 +2732,13 @@ pre .css~* .id,pre .id {
 .toc-container.tooltip-left .tooltip-east .tooltip-content {
 	min-height: 100px;
 	text-align: left;
-	padding: 5px 0 5px 20px;
+	padding: 5px 20px 5px 20px;
 	right: 4.7em;
 	min-width: 200px;
 	width: auto;
 	font-size: 14px;
-	text-shadow: 1px 1px 1px #398199;
+	border: 3px solid whitesmoke;
+	/* text-shadow: 1px 1px 1px #398199; */
 	bottom: -10px;
 	-webkit-transform-origin: 100% 100%;
 	transform-origin: 100% 100%;
@@ -2743,6 +2748,9 @@ pre .css~* .id,pre .id {
 
 .toc-container.tooltip-left .tooltip-east .tooltip-content a {
 	color: #fff
+}
+.toc-container.tooltip-left .tooltip-east .tooltip-content a:hover {
+	color: #FFEB3B
 }
 
 .toc-container.tooltip-left .tooltip-east .tooltip-content:after {
@@ -2816,7 +2824,7 @@ pre .css~* .id,pre .id {
 	width: 200px;
 	bottom: 50%;
 	margin-bottom: -10px;
-	border-radius: 10px;
+	border-radius: 5px;
 	font-size: 1.1em;
 	text-align: center;
 	color: #fff;
@@ -4231,5 +4239,42 @@ ul.copyright li {
 		font-size: 16px;
 	}
 }
+
+/* 代码复制按钮 */
+.btn-copy {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #eee;
+    background-image: linear-gradient(#fcfcfc, #eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333;
+    -webkit-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    padding: 2px 6px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    opacity: 0;
+}
+
+.btn-copy span {
+    margin-left: 5px
+}
+
+.code-wrapper:hover .btn-copy {
+    opacity: 1;
+}
+
+
 
 
