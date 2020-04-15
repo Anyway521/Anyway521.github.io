@@ -1,5 +1,11 @@
 <%- partial('_partial/head') %>
 <body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    <!-- <div class="load_title">Loading. . .<br></div> -->
+  </div>
   <div id="container" q-class="show:isCtnShow">
     <a class="fork" href="https://github.com/Anyway521/Anyway521.github.io/tree/backup" target="_blank"><img width="149" height="149" src="https://cdn.anyway1314.cn/imageforkme_right_orange.png" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
     <style>
@@ -36,10 +42,24 @@
 
     
   </div>
+<!-- Js控制Loding特效-->
+<script>
+  //监听加载状态改变
+  document.onreadystatechange = completeLoading;
+  
+  //加载状态为complete时移除loading效果
+  function completeLoading() {
+      if (document.readyState == "complete") {
+          var loadingMask = document.getElementById('loader-wrapper');
+          loadingMask.parentNode.removeChild(loadingMask);
+      }
+  }  
+</script>
+<!-- loading结束 -->
 <!-- 代码块复制功能 -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
 <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="/clipboard_use.js"></script>
-
+<!-- 代码块复制功能结束 -->
 </body>
 </html>
