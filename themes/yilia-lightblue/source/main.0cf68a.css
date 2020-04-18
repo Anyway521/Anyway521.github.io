@@ -2603,7 +2603,7 @@ pre .css~* .id,pre .id {
 }
 
 .share-icons a {
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 	border-radius: 50%;
 	display: -moz-inline-stack;
 	display: inline-block;
@@ -2613,11 +2613,11 @@ pre .css~* .id,pre .id {
 	transition: .3s;
 	text-align: center;
 	color: #fff;
-	opacity: .7;
+	opacity: 1;
 	width: 28px;
 	height: 28px;
 	line-height: 26px;
-	text-shadow: 1px 1px 1px #509eb7
+	/* text-shadow: 1px 1px 1px #509eb7 */
 }
 
 .share-icons a:active {
@@ -2625,6 +2625,7 @@ pre .css~* .id,pre .id {
 }
 
 .share-icons a:hover {
+	color: white;
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2)
 }
@@ -2633,8 +2634,28 @@ pre .css~* .id,pre .id {
 	border: none;
 	color: #fff;
 	/* background: #03a9f4; */
-	background: #1296db;
+	background: #2196f3;
 	text-shadow: none
+}
+
+/* 分享图标 */
+.share-icons .weibo{
+	background: #fe2323;
+}
+.share-icons .weixin{
+	background: #07c160;
+}
+.share-icons .qq{
+	background: #03A9F4;
+}
+.share-icons .qzone{
+	background: #fecf03;
+}
+
+#share-arrow:after{
+	width: 1.2em;
+	height: 1.2em;
+    margin: -.3em .09em 0;
 }
 
 .page-modal {
@@ -2954,8 +2975,8 @@ pre .css~* .id,pre .id {
 
 .tooltip-left .tooltip-content {
 	position: absolute;
-	/* background: #1b4e9d; */
-	background: #1296db;
+	background: linear-gradient(#1296db,#24c1f6);
+	/* background: #1296db; */
 	z-index: 9999;
 	width: 200px;
 	bottom: 50%;
@@ -3007,11 +3028,11 @@ pre .css~* .id,pre .id {
 }
 
 .tooltip-left .tooltip-content:after {
-	width: 2em;
+	width: 1.5em;
 	height: 2em;
 	top: 50%;
 	margin: -1em 0 0;
-	background: url(./fonts/catalog-tail.svg) no-repeat 50%;
+	background: url(./fonts/tooltip.4004ff.svg) no-repeat 50%;
 	background-size: 100%
 }
 
