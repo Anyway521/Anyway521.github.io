@@ -19,8 +19,8 @@
         var a = t.createElement("div");
         a.className = "heart", d.push({
             el: a,
-            x: e.clientX - 5,
-            y: e.clientY - 5,
+            x: e.clientX - 6,
+            y: e.clientY - 12,
             scale: 1,
             alpha: 1,
             color: s()

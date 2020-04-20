@@ -2975,7 +2975,7 @@ pre .css~* .id,pre .id {
 
 .tooltip-left .tooltip-content {
 	position: absolute;
-	background: linear-gradient(#1296db,#24c1f6);
+	background: linear-gradient(#2196f3,#24c1f6);
 	/* background: #1296db; */
 	z-index: 9999;
 	width: 200px;
