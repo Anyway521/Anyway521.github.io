@@ -6,14 +6,14 @@
 title: 本该如此
 subtitle: 如人饮水、冷暖自知
 description: 个人技术博客
-keywords: Java、VSCode、Android、Hexo、C/C++、PS、Wordpress
+keywords: C/C++、VSCode、HTML5、Hexo、JS、PS、Wordpress
 author: 本该如此
 language: zh-CN
-timezone:
+timezone: Asia/Shanghai
 
 # 你网站的URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://anyway1314.cn
+url: https://anyway521.github.io
 root: /
 # permalink: :year/:month/:day/:title/
 permalink_defaults: false
@@ -34,12 +34,14 @@ i18n_dir: :lang
 # 跳过渲染，第一次用这个主题可以注释掉
 skip_render:
   - "README.md"
-  - "ZONE/**"
+  - "demo/**" 
+
+
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+external_link.enable: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 #true:new 创建文章自动生成相应的文件夹
@@ -79,13 +81,6 @@ time_format: HH:mm:ss
 per_page: 7
 pagination_dir: page
 
-# Counting words
-# 字数统计，看个人需要是否开启
-word_count: true
- 
-# 文章类型，在上面word_count: true的前提下可以进行开启
-# 具体类型在对应的md文件开头的 article_type属性进行定义。原创：article_type:0 ，，转载：article_type:1 :
-article_type: true
 
 # Security
 ## 文章加密
@@ -97,9 +92,11 @@ encrypt:
 ## Themes: https://hexo.io/themes/
 
 # 生成页面rss
-plugins: hexo-generater-feed
+plugins: 
+- hexo-generator-feed 
 
-theme: yilia-lightblue
+
+theme: yilia-qure
 
 jsonContent:
     meta: false
@@ -127,12 +124,12 @@ deploy:
   repository: 
       github: git@github.com:Anyway521/anyway521.github.io.git
       coding: git@e.coding.net:Des_tiny/Des_tiny.git
-  branch: master
+  branch: main
 ## Backup
 ## 备份，按需所取
 backup:
     type: git
-    message: yilia-lightblue-2020-04-20(目录细节再优化)
+    message: yilia-lightblue-2020-10-10(图床迁移)
     repository:
        github: git@github.com:Anyway521/Anyway521.github.io.git,lightblue
        coding: git@e.coding.net:Des_tiny/Des_tiny.git,lightblue

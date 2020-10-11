@@ -1,16 +1,17 @@
-blog.anyway1314.cn
+anyway1314.cn
 ================
 
-简约优雅的个人博客，点击 [我的博客](http://blog.anyway1314.cn/) 查看效果。
+简约优雅的个人博客，点击 [我的博客](https://anyway1314.cn/) 查看效果。
 Powered by [yilia](http://litten.me/)
 
+![QQ截图20200421161401](https://cdn.anyway1314.cn/imageQQ截图20200421161401.jpg)
 
-![20190718133332.png](https://cdn.anyway1314.cn/image20190718133332.png)
-
+# 历史更新
 ## 2019.7.15
 
 基于yilia源生主题优化，没有进行过多的定制修改（个人还是喜欢简洁风格）。
 
+![20190718133332.png](https://cdn.anyway1314.cn/image20190718133332.png)
 —————————————————————
 
 ## 2019-7-20主题美化
@@ -251,6 +252,21 @@ a:hover{
 ## 2020-04-18
 - 优化文章目录以及分享按钮
 ![20200418200408](https://cdn.anyway1314.cn/image20200418200408.png)
+
+
+## 2020-05-15
+- 优化智能菜单标签搜索
+![QQ截图20200515160327](https://cdn.anyway1314.cn/imageQQ截图20200515160327.jpg)
+
+## 2020-05-24
+- 改font-awesome为CDN加速方式，删除本地文件
+- 优化Loading效果代码
+  
+## 2020-10-10
+- 图床迁移到github
+- 注销域名anyway1314.cn
+- 更新hexo,nodejs后主题left-col中<%=theme.author%>无法引用博客根目录中_config.yml中的author,在主题目录下的_config.yml新增author.
+- fontawesome的cdn加速失效（导致网页20S还打不开），更新fontawesome-kit加速。
 
 ***
 联系方式：
