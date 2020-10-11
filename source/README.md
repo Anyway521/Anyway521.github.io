@@ -1,7 +1,7 @@
 anyway1314.cn
 ================
 
-简约优雅的个人博客，点击 [我的博客](https://anyway1314.cn/) 查看效果。
+简约优雅的个人博客，点击 [我的博客](https://anyway521.github.io/) 查看效果。
 Powered by [yilia](http://litten.me/)
 
 ![QQ截图20200421161401](https://cdn.anyway1314.cn/imageQQ截图20200421161401.jpg)
