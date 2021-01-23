@@ -6,7 +6,7 @@
 title: 本该如此
 subtitle: 如人饮水、冷暖自知
 description: 个人技术博客
-keywords: C/C++、VSCode、HTML5、Hexo、JS、PS、Wordpress
+keywords: C++、VSCode、HTML5、Hexo、JS、PS、Wordpress
 author: 本该如此
 language: zh-CN
 timezone: Asia/Shanghai
@@ -123,14 +123,14 @@ deploy:
   type: git
   repository: 
       github: git@github.com:Anyway521/anyway521.github.io.git
-      coding: git@e.coding.net:Des_tiny/Des_tiny.git
+      # coding: git@e.coding.net:Des_tiny/Des_tiny.git
   branch: main
 ## Backup
 ## 备份，按需所取
 backup:
     type: git
-    message: yilia-lightblue-2020-10-10(图床迁移)
+    message: yilia-lightblue-2021-01-23(细节优化)
     repository:
        github: git@github.com:Anyway521/Anyway521.github.io.git,lightblue
-       coding: git@e.coding.net:Des_tiny/Des_tiny.git,lightblue
+      #  coding: git@e.coding.net:Des_tiny/Des_tiny.git,lightblue
        
