@@ -48,11 +48,13 @@ fancybox: true
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 1
 # 打赏wording
-reward_wording: '创作不易，感谢支持！'
+reward_wording: '赏杯Java？٩(๑^o^๑)۶'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: '/img/ali.jpg'
+# alipay: '/img/ali.jpg'
 # 微信二维码图片地址
-weixin: '/img/wc.png'
+# weixin: '/img/weixin.png'
+# 自定义打赏码地址
+reward_code: '/img/weixin_rp.png'
 
 
 ## 版权声明

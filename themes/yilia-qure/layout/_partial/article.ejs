@@ -33,13 +33,19 @@
           <a href="javascript:;" class="page-reward-btn tooltip-top">
             <div class="tooltip tooltip-east">
             <span class="tooltip-item">
-              赏
+              赞
             </span>
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
                   <p class="reward-p"><i class="icon icon-quo-left"></i><%= theme.reward_wording%><i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
+                    <% if(theme.reward_code) {%>
+                      <div class="reward-box-item">
+                        <img class="reward-img" src="<%= theme.reward_code%>">
+                        <span class="reward-type">创作不易，感谢支持！</span>
+                      </div>
+                      <% } %>
                     <% if(theme.alipay) {%>
                     <div class="reward-box-item">
                       <img class="reward-img" src="<%= theme.alipay%>">
@@ -65,7 +71,7 @@
       <%if(post.top){%>
         <div class="article-pop-out tagcloud">
           <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
+          <a class="article-tag-list-link color6">置顶</a>
         </div>
       <% } %>
       <%- partial('post/tag') %>

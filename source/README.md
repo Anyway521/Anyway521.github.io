@@ -268,6 +268,8 @@ a:hover{
 - 更新hexo,nodejs后主题left-col中<%=theme.author%>无法引用博客根目录中_config.yml中的author,在主题目录下的_config.yml新增author.
 - fontawesome的cdn加速失效（导致网页20S还打不开），更新fontawesome-kit加速。
 
+## 2021-01-24
+- 优化打赏样式
 ***
 联系方式：
   QQ : 2411535738

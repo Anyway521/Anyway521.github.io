@@ -129,7 +129,7 @@ deploy:
 ## 备份，按需所取
 backup:
     type: git
-    message: yilia-lightblue-2021-01-23(细节优化)
+    message: yilia-lightblue-2021-01-23(标签，左侧目录优化，文章导航，配色渐变)
     repository:
        github: git@github.com:Anyway521/Anyway521.github.io.git,lightblue
       #  coding: git@e.coding.net:Des_tiny/Des_tiny.git,lightblue
