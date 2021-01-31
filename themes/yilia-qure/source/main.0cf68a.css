@@ -1305,7 +1305,7 @@ span.attr{
 }
 
 #header .tagcloud a {
-	color: #fff
+	color: #fff;
 }
 
 .tagcloud a {
@@ -1314,14 +1314,18 @@ span.attr{
 	font-weight: 400;
 	font-size: 10px;
 	color: #fff;
-	height: 20px;
-	line-height: 20px;
+	height: 18px;
+	line-height: 18px;
 	float: left;
 	padding: 0 6px 0 10px;
 	position: relative;
-	border-radius: 0 4px 4px 0;
+	border-radius: 4px;
 	margin: 5px 9px 5px 8px;
-	font-family: 'microsoft yahei','Helvetica',simhei,simsun,sans-serif
+	font-family: 'microsoft yahei','Helvetica',simhei,simsun,sans-serif;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
 }
 
 .tagcloud a:hover {
@@ -1335,8 +1339,8 @@ span.attr{
 	height: 0;
 	position: absolute;
 	top: 0;
-	left: -19px;
-	border: 10px solid transparent
+	left: -16px;
+	border: 9px solid transparent
 }
 
 .tagcloud a:after {
@@ -1344,11 +1348,15 @@ span.attr{
 	width: 4px;
 	height: 4px;
 	background-color: #fff;
-	border-radius: 4px;
+	border-radius: 4px/3px;
 	box-shadow: 0 0 0 1px rgba(0,0,0,.3);
 	position: absolute;
 	top: 8px;
-	left: 2px
+	left: 2px;
+	-webkit-border-radius: 4px/3px;
+	-moz-border-radius: 4px/3px;
+	-ms-border-radius: 4px/3px;
+	-o-border-radius: 4px/3px;
 }
 
 /* 原始color1-5 #ff945c #cc8167 #ba8f6c #94635c #7b5d5f*/
@@ -1367,11 +1375,11 @@ span.attr{
 
 .tagcloud a.color2 {
 	background: #24C6DC;
-	background: -webkit-linear-gradient(80deg, #24C6DC, #514A9D)
-	background: -moz-linear-gradient(80deg, #24C6DC, #514A9D)
-	background: -o-linear-gradient(80deg, #24C6DC, #514A9D)
-	background: -ms-linear-gradient(80deg, #24C6DC, #514A9D)
-	background: linear-gradient(80deg, #24C6DC, #514A9D)
+	background: -webkit-linear-gradient(80deg, #24C6DC, #514A9D);
+	background: -moz-linear-gradient(80deg, #24C6DC, #514A9D);
+	background: -o-linear-gradient(80deg, #24C6DC, #514A9D);
+	background: -ms-linear-gradient(80deg, #24C6DC, #514A9D);
+	background: linear-gradient(80deg, #24C6DC, #514A9D);
 }
 
 .tagcloud a.color2:before {
@@ -1393,11 +1401,11 @@ span.attr{
 
 .tagcloud a.color4 {
 	background: #3CA55C;
-	background: -webkit-linear-gradient(80deg, #3CA55C, #B5AC49)
-	background: -moz-linear-gradient(80deg, #3CA55C, #B5AC49)
-	background: -o-linear-gradient(80deg, #3CA55C, #B5AC49)
-	background: -ms-linear-gradient(80deg, #3CA55C, #B5AC49)
-	background: linear-gradient(80deg, #3CA55C, #B5AC49)
+	background: -webkit-linear-gradient(80deg, #3CA55C, #B5AC49);
+	background: -moz-linear-gradient(80deg, #3CA55C, #B5AC49);
+	background: -o-linear-gradient(80deg, #3CA55C, #B5AC49);
+	background: -ms-linear-gradient(80deg, #3CA55C, #B5AC49);
+	background: linear-gradient(80deg, #3CA55C, #B5AC49);
 }
 
 .tagcloud a.color4:before {
@@ -2079,7 +2087,7 @@ span.attr{
 	width: 14px;
 	height: 14px;
 	position: absolute;
-	top: 16px;
+	top: 15px;
 	left: 2px;
 	-webkit-transform: translateY(-50%);
 	border-radius: 100%;
@@ -2114,20 +2122,17 @@ span.attr{
 
 .tools-col .tools-section .search-ul .search-li {
 	padding: 10px 20px;
-	border-bottom: 1px dotted #b4e1fb;
-	border-top: 1px solid transparent;
-	font-style: italic;
+	/* font-weight: bold; */
 }
 
 .tools-col .tools-section .search-ul .search-li:hover {
-	/* background: hsla(0,0%,100%,.2) */
-	/* background: hsl(200, 100%, 72%); */
-	font-weight: bold;
-	background: #69b9f7;
-    border-bottom: 1px dotted #41bdf5;
-	border-top: 1px solid #41bdf5;
 	
-	/* transition:all .5s ease-in-out; */
+	background: #5d91e2;
+	background: -webkit-linear-gradient(45deg, #5d91e2, transparent);
+	background: -moz-linear-gradient(45deg, #5d91e2, transparent);
+	background: -o-linear-gradient(45deg, #5d91e2, transparent);
+	background: -ms-linear-gradient(45deg, #5d91e2, transparent);
+	background: linear-gradient(45deg, #5d91e2, transparent);
 }
 
 .tools-col .tools-section .search-ul .search-title {
@@ -2350,7 +2355,7 @@ span.attr{
 	padding-top: 10px;
 	/* margin: 30px 7.6923% 0; */
 	margin: 5px 7.6923%;
-	min-height: 60px;
+	min-height: 64px;
 	border-top: 1px solid #c8d5d5
 }
 
@@ -3375,15 +3380,15 @@ ul.copyright li {
 		left: 0
 	}
 
-	.btnctn .slider-trigger:hover {
+	/* .btnctn .slider-trigger:hover {
 		background: #2196f3
-	}
+	} */
 
 	.btnctn .slider-trigger .icon {
 		font-size: 24px;
 		color: #fff
 	}
-
+	
 	.article-header {
 		border-left: none;
 		padding: 0;
@@ -3679,10 +3684,10 @@ ul.copyright li {
 	.header-menu.tools-nav li a,.header-menu.tools-nav ul a {
 		color: #fff
 	}
-
-	.header-menu.tools-nav li a.active,.header-menu.tools-nav ul a.active {
+    /* 移动端左侧头部按钮 */
+	/* .header-menu.tools-nav li a.active,.header-menu.tools-nav ul a.active {
 		background: #7ed6fe
-	}
+	} */
 
 	.header-menu ul {
 		text-align: center;
@@ -3725,7 +3730,13 @@ ul.copyright li {
 
 	.header-menu li a.active {
 		color: #fffff8;
-		background: #a0a0a0
+		/* background: #a0a0a0; */
+		background: #54c8ff;
+		background: -webkit-linear-gradient(45deg,#54c8ff, #b678f5,#20b3f5);
+		background: -moz-linear-gradient(45deg,#54c8ff, #b678f5,#20b3f5);
+		background: -o-linear-gradient(45deg,#54c8ff, #b678f5,#20b3f5);
+		background: -ms-linear-gradient(45deg,#54c8ff, #b678f5,#20b3f5);
+		background: linear-gradient(45deg,#54c8ff, #b678f5,#20b3f5);
 	}
 
 	.profilepic {
@@ -3786,6 +3797,23 @@ ul.copyright li {
 	#container,body,html {
 		zoom: 96.5%;
 	}
+	/* 文章标题图500*250像素的自定义html片段，在手机端自适应 */
+	.base_article_header_pic{
+		transform: scale(.75);
+    	left: -64px;
+	}
+}
+
+@media screen and (max-width:350px) {
+	/* 文章标题图500*250像素的自定义html片段，在手机端自适应 */
+	.base_article_header_pic{
+		transform: scale(.65);
+		left: -94px;
+		-webkit-transform: scale(.65);
+		-moz-transform: scale(.65);
+		-ms-transform: scale(.65);
+		-o-transform: scale(.65);
+}
 }
 
 
