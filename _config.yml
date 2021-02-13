@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # 你网站的URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://anyway521.github.io
+url:  https://anyway521.gitee.io
 root: /
 # permalink: :year/:month/:day/:title/
 permalink_defaults: false
@@ -35,6 +35,7 @@ i18n_dir: :lang
 skip_render:
   - "README.md"
   - "demo/**" 
+  - "baidu_verify_code-OcOoD8Zc3x.html"
 
 
 # Writing
@@ -122,9 +123,8 @@ jsonContent:
 deploy:
   type: git
   repository: 
-      github: git@github.com:Anyway521/anyway521.github.io.git
-      # coding: git@e.coding.net:Des_tiny/Des_tiny.git
-  branch: main
+      gitee: git@gitee.com:anyway521/anyway521.git
+  branch: master
 ## Backup
 ## 备份，按需所取
 backup:
@@ -132,5 +132,5 @@ backup:
     message: yilia-lightblue-2021-01-31(标签，左侧目录优化，文章导航，配色渐变，移动端调优)
     repository:
        github: git@github.com:Anyway521/Anyway521.github.io.git,lightblue
-      #  coding: git@e.coding.net:Des_tiny/Des_tiny.git,lightblue
+      
        

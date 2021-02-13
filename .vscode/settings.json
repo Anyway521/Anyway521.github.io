@@ -1,0 +1,7 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 16,
+    "editor.acceptSuggestionOnEnter": "on",      
+    "emmet.triggerExpansionOnTab": true,
+    "editor.quickSuggestions": true,
+}

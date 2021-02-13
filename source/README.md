@@ -4,14 +4,14 @@ anyway1314.cn
 简约优雅的个人博客，点击 [我的博客](https://anyway521.github.io/) 查看效果。
 Powered by [yilia](http://litten.me/)
 
-![QQ截图20200421161401](https://cdn.anyway1314.cn/imageQQ截图20200421161401.jpg)
+![QQ截图20200421161401](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imageQQ截图20200421161401.jpg)
 
 # 历史更新
 ## 2019.7.15
 
 基于yilia源生主题优化，没有进行过多的定制修改（个人还是喜欢简洁风格）。
 
-![20190718133332.png](https://cdn.anyway1314.cn/image20190718133332.png)
+![20190718133332.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image20190718133332.png)
 —————————————————————
 
 ## 2019-7-20主题美化
@@ -39,10 +39,10 @@ Powered by [yilia](http://litten.me/)
 —————————————————————
 ## 2019-7-22细节优化
 ### PC端
-![QQ截图20190726180818.png](https://cdn.anyway1314.cn/imageQQ截图20190726180818.png)
+![QQ截图20190726180818.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imageQQ截图20190726180818.png)
 
 ### 移动端
-![4560190726180818_爱奇艺.jpg](https://cdn.anyway1314.cn/image4560190726180818_爱奇艺.jpg)
+![4560190726180818_爱奇艺.jpg](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image4560190726180818_爱奇艺.jpg)
 
 - 优化了左侧社交图标的配色
     - github: #afb6ca->#bf59f3
@@ -53,11 +53,11 @@ Powered by [yilia](http://litten.me/)
 - 优化了点触感
 ## 2019-7-26美化、修复Bug
 
-![20190726215109.png](https://cdn.anyway1314.cn/image20190726215109.png)
+![20190726215109.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image20190726215109.png)
 
 - 修改单条代码背景(`.article-entry p code`)为lightyellow，边框border：1px solid yellow
 
-![20190726215431.png](https://cdn.anyway1314.cn/image20190726215431.png)
+![20190726215431.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image20190726215431.png)
 - 修改标题代码背景(`.article-entry code`)为lightyellow
 - 浏览器工具中提供的#5cf54abf在移动端不显示、更改为#5cf54a
 - body,button,input,select,textarea配色调整为azure
@@ -69,10 +69,10 @@ Powered by [yilia](http://litten.me/)
 
 ## 2019-7-30 yilia-qure，清新护眼
 ### PC端
-![QQ截图20190803213146.png](https://cdn.anyway1314.cn/imageQQ截图20190803213146.png)
+![QQ截图20190803213146.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imageQQ截图20190803213146.png)
 
 ### 移动端
-![4560190726181220818.png](https://cdn.anyway1314.cn/image4560190726181220818.png)
+![4560190726181220818.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image4560190726181220818.png)
 
 - 修改左侧纯色背景为图片背景
 - 左侧智能菜单函数优化
@@ -85,17 +85,17 @@ Powered by [yilia](http://litten.me/)
 - 字数统计配色`#04338c`
 
 ## 2019-8-10 增加CSDN社交图标
-![20190810204141.png](https://cdn.anyway1314.cn/image20190810204141.png)
+![20190810204141.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image20190810204141.png)
 - QQ图标配色优化（原谅绿->QQ蓝）
 
 ## 2019-8-16 增加“fork me on github”丝带
-![QQ截图20190817165748.png](https://cdn.anyway1314.cn/imageQQ截图20190817165748.png)
+![QQ截图20190817165748.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imageQQ截图20190817165748.png)
 
 
 
 ## 2019-8-18 左侧背景改为动态切换(pc端)
 
-点击查看动图：[GIF](https://cdn.anyway1314.cn/imagefgddsdtty.gif)
+点击查看动图：[GIF](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imagefgddsdtty.gif)
 
 - 配色更改：
     - 中间边框（.mid-col）#eee->#e6faf8
@@ -109,7 +109,7 @@ Powered by [yilia](http://litten.me/)
 
 ## 2019-9-15 主题优化
 
-![QQ截图20190915161407.png](https://cdn.anyway1314.cn/imageQQ截图20190915161407.png)
+![QQ截图20190915161407.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imageQQ截图20190915161407.png)
 
 - 字体更改
     - font-fimily : 改为：'Microsoft YaHei','SF Pro Display',Roboto,Noto,Arial,'PingFang SC',sans-serif
@@ -126,19 +126,19 @@ Powered by [yilia](http://litten.me/)
 
 - 新增版本 light-blue
 
-![QQ截图20190917002518.png](https://cdn.anyway1314.cn/imageQQ截图20190917002518.png)
+![QQ截图20190917002518.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imageQQ截图20190917002518.png)
 
 ## 2019-9-28
 - 加入头像旋转：
 
-<video src="https://cdn.anyway1314.cn/201909220711.mp4" controls="controls">
+<video src="https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/201909220711.mp4" controls="controls">
 your browser does not support the video tag
 </video>
 
 
 - 可在主题目录下`_config.yml`里设置`Rotate: true`
 
-![20190928221402.png](https://cdn.anyway1314.cn/image20190928221402.png)
+![20190928221402.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image20190928221402.png)
 
 —————————————————————
 
@@ -187,7 +187,7 @@ a:hover{
 ## 2019-11-22
 修复错误 
 
-![20191122233923.png](https://cdn.anyway1314.cn/image20191122233923.png)
+![20191122233923.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image20191122233923.png)
 
 - .article-inner{border-color: azure;background: azure;} 改为：border-color:#d8e4e4d4;~~background: azure~~
 
@@ -195,14 +195,14 @@ a:hover{
 ## 2020-03-03
 优化社交图标 
 
-![GIF202020sskf.gif](https://cdn.anyway1314.cn/imageGIF202020sskf.gif)
+![GIF202020sskf.gif](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imageGIF202020sskf.gif)
 
 ## 2020-03-15
 标签云颜色：
 - color1-5 #ff945c   #cc8167    #ba8f6c #94635c #7b5d5f
 - newcolor #ff945c deepskyblue  #FFC107 #8BC34A #c8bf3d
 
-![20200315170906.png](https://cdn.anyway1314.cn/image20200315170906.png)
+![20200315170906.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image20200315170906.png)
 
 移动端用渐变效果不好，改为纯色
 /* layout/patial/head.ejs有container.show的定义 */
@@ -214,7 +214,7 @@ a:hover{
 	}
 }
 ```
-![Scrshot_20200852-97.png](https://cdn.anyway1314.cn/imageScrshot_20200852-97.png)
+![Scrshot_20200852-97.png](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imageScrshot_20200852-97.png)
 
 
 ## 2020-03-18
@@ -231,32 +231,32 @@ a:hover{
 - @media screen and (max-width: 800px) .article-header{~~border-bottom: 1px dotted #ddd;~~}
 - 新增“文章类型”标签：原创，转载，
 
-![20200413192928](https://cdn.anyway1314.cn/image20200413192928.png)
+![20200413192928](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image20200413192928.png)
 ## 2020-04-14
 - 优化文章目录
   
-![GIF202004141411](https://cdn.anyway1314.cn/imageGIF202004141411.gif)
+![GIF202004141411](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imageGIF202004141411.gif)
 
 - 增加代码复制按钮
 
-![2020041401](https://cdn.anyway1314.cn/image2020041401.gif)
+![2020041401](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image2020041401.gif)
 
 - 左侧菜单增加图标
   
-![20200414165618](https://cdn.anyway1314.cn/image20200414165618.png)
+![20200414165618](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image20200414165618.png)
 
 - 底部文章页码
   
-![20200414180510](https://cdn.anyway1314.cn/image20200414180510.png)
+![20200414180510](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image20200414180510.png)
 
 ## 2020-04-18
 - 优化文章目录以及分享按钮
-![20200418200408](https://cdn.anyway1314.cn/image20200418200408.png)
+![20200418200408](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image20200418200408.png)
 
 
 ## 2020-05-15
 - 优化智能菜单标签搜索
-![QQ截图20200515160327](https://cdn.anyway1314.cn/imageQQ截图20200515160327.jpg)
+![QQ截图20200515160327](https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imageQQ截图20200515160327.jpg)
 
 ## 2020-05-24
 - 改font-awesome为CDN加速方式，删除本地文件
