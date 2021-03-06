@@ -128,9 +128,9 @@ deploy:
 ## Backup
 ## 备份，按需所取
 backup:
-    type: git
-    message: yilia-qure-2021-03-06(稳定版更新-01)
-    repository:
-       gitee: git@gitee.com:anyway521/anyway521.git,backup
+  type: git
+  message: yilia-qure-2021-03-06(稳定版更新-01)
+  repository:
+      gitee: git@gitee.com:anyway521/anyway521.git,backup
       
        
