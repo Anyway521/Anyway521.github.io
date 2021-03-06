@@ -131,6 +131,7 @@ backup:
   type: git
   message: yilia-qure-2021-03-06(稳定版更新-01)
   repository:
-      gitee: git@gitee.com:anyway521/anyway521.git,backup
+      github: git@github.com:Anyway521/Anyway521.github.io.git,backup
+      # gitee: git@gitee.com:anyway521/anyway521.git,backup
       
        
