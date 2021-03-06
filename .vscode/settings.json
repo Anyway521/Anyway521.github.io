@@ -4,4 +4,5 @@
     "editor.acceptSuggestionOnEnter": "on",      
     "emmet.triggerExpansionOnTab": true,
     "editor.quickSuggestions": true,
+    "editor.multiCursorModifier": "ctrlCmd",
 }

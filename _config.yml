@@ -129,8 +129,8 @@ deploy:
 ## 备份，按需所取
 backup:
     type: git
-    message: yilia-lightblue-2021-01-31(标签，左侧目录优化，文章导航，配色渐变，移动端调优)
+    message: yilia-qure-2021-03-06(稳定版更新-01)
     repository:
-       github: git@github.com:Anyway521/Anyway521.github.io.git,lightblue
+       gitee: git@gitee.com:anyway521/anyway521.git,backup
       
        

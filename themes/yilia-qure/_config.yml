@@ -83,10 +83,10 @@ toc_empty_wording: '目录，不存在的…'
 top: true
 
 #网站图标，icon格式
-favicon: '/img/favicon.ico'
+favicon: '/img/favicon2.ico'
 
 # 头像旋转
-rotate: false
+rotate: true
 
 # 你的头像url
 avatar: 'https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/imageme.jpg'
@@ -107,7 +107,7 @@ article_type: true
 
 #1、giteement码云评论系统
 giteement:
-  enable: true  # 是否启用码云
+  enable: false  # 是否启用码云
   redirect_uri: https://anyway521.gitee.io/   # 回调地址
   oauth_uri: https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token  # 授权地址，不能更改
   giteeID: anyway521  # 码云账号英文名
@@ -126,6 +126,23 @@ gitalk:
   ClientSecret: ''
   adminUser: Anyway521
   distractionFreeMode: true
+
+#2、Valine https://valine.js.org
+valine:
+  enable: true
+  #Leancloud应用的appId
+  appid: 55XDkHEVbM1cflTDGqM2WKI9-gzGzoHsz
+  #Leancloud应用的appId
+  appkey: B3W90fSeoxqEuDGV3Qzg6M6E
+  avatar: identicon
+  #评论列表头像样式：'/mm/identicon/monsterid/wavatar/retro/hide'
+  avatar_cdn: ''
+  #头像CDN
+  placeholder: '友情提醒，留下正确的邮箱地址可以第一时间获取评论反馈' #评论框占位符
+  pageSize: 10 #评论分页
+  visitor: true #阅读统计
+
+
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
@@ -166,6 +183,9 @@ smart_menu:
 
 friends:
   亦往沧劫: 'https://blog.todest.cn/'
+  試毅-思伟: 'https://zhousiwei.gitee.io'
+  辛猿毅码: 'https://code-ape.gitee.io'
+  荷塘月色的博客: 'https://www.yansheng.xyz'
   下载本站App: 'https://cdn.jsdelivr.net/gh/Anyway521/Site-app@main/io.anyway521.gitee.apk'
 
 #在这里添加任何配置，都加在“aboutme”的上面，否则会出问题

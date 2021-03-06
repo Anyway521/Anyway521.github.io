@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易购物车</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #f5f5f5;
+        }
+        ul li{
+            list-style: none;
+        }
+        .cart{
+            width: 1200px;
+            min-height: 500px;
+            overflow: hidden;
+            background-color: #fff;
+            margin: 100px auto;
+            position: relative;
+            padding-bottom: 50px;
+        }
+        ul li{
+            line-height: 80px;
+            width: 150px;
+            text-align: center;
+        }
+        ul li img{
+            width: 80px;
+            height: 50px;
+            vertical-align: middle;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .cartTitle{
+            height: 70px;
+        }
+        .cartTitle li:first-of-type{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .cartTitle li{
+            font-size: 14px;
+        }
+        input{
+            outline: none;
+            box-sizing: content-box;
+            border: 1px solid #e0e0e0;
+            width: 20px;
+            display: inline-block;
+            height: 20px;
+            cursor: pointer;
+        }
+        input[type="text"]{
+            width: 54px;
+            height: 40px;
+            font-size: 18px;
+            border: none;
+            color: #ff6700;
+            text-align: center;
+        }
+        
+        .goods{
+            height: 120px;
+        }
+        .goods li.num{
+            display: flex;
+            justify-content: space-between;
+            line-height: 40px;
+            width: 150px;
+            height: 40px;
+            border: 1px solid #e0e0e0;
+        }
+        .goods li.num input:first-of-type,.goods li.num input:last-of-type{
+            width: 40px;
+            font-size: 25px;
+            background-color: #fff;
+            border: none;
+            height: 40px;
+            line-height: 42px;
+        }
+        ul li:last-of-type input{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            font-size:18px;
+            background-color: #fff;
+            border: none;
+        }
+        ul li:last-of-type input:hover{
+            background-color: #e53935;
+            color: white;
+        }
+        .checkBtn{
+            margin-left: -62px;
+        }
+        .footer{
+            position: absolute;
+            height: 50px;
+            left: 0;
+            bottom: 0;
+            justify-content: flex-end;
+            border: none;
+        }
+        
+        .footer li:last-of-type{
+            line-height: 50px;
+            width: 200px;
+        }
+        .footer li input[type="button"]{
+            width: 200px;
+            height: 50px;
+            background: #ff6700;
+            color: #fff;
+            border-radius: 0;
+        }
+        .footer li input[type="button"]:hover{
+            background-color: #f25807;
+            border-color: #f25807;
+            color: #fff;
+        }
+        .footer li:first-of-type{
+            width: 220px;
+            line-height: 50px;
+        }
+        .footer li:first-of-type span{
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .footer li span{
+            color: #ff6700;
+        }
+        #total{
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart">
+        <ul class="cartTitle">
+            <li><input type="checkbox" name="" onchange="selectAll(this)">全选</li>
+            <li>商品图片</li>
+            <li>商品名称</li>
+            <li>单价</li>
+            <li>数量</li>
+            <li>小计</li>
+            <li>操作</li>
+        </ul>
+        <ul class="goods">
+            <li><input type="checkbox" class="checkBtn" onchange="cacuPer(this)"></li>
+            <li><img src="https://cdn.jsdelivr.net/gh/Anyway521/blogpic2@main/image/0eb3ef.jpg" alt=""></li>
+            <li>小米12</li>
+            <li class="single">$500</li>
+            <li class="num"><input type="button" value="-" onclick="numCut(this)"><input type="text" name="" id="" value="1" onblur="numModify(this)"><input type="button" value="+" onclick="numPlus(this)"></li>
+            <li class="minCount">$500</li>
+            <li><input type="button" value="x" onclick="delGoods(this)"></li>
+        </ul>
+        <ul class="footer">
+            <li><span>合计:</span><span id="total">0</span><span>美元</span></li>
+            <li><input type="button" value="新增" onclick="addGoods()"></li>
+        </ul>
+    </div>
+</body>
+    <script>
+        
+        var all = 0   //合计
+        function addGoods(){
+            var cart = document.getElementsByClassName('cart')[0]  //购物车
+            var newGoods = document.createElement('ul')   //创建一个新的ul
+            newGoods.innerHTML = '<li><input type="checkbox" class="checkBtn" onchange="cacuPer(this)"></li>'
+            +'<li><img src="https://cdn.jsdelivr.net/gh/Anyway521/blogpic2@main/image/0eb3ef.jpg" alt=""></li>'
+            +'<li>小米12</li>'
+            +'<li class="single">$500</li>'
+            +'<li class="num"><input type="button" value="-" onclick="numCut(this)"><input type="text" name="" id="" value="1" onblur="numModify(this)"><input type="button" value="+" onclick="numPlus(this)"></li>'
+            +'<li class="minCount">$500</li>'
+            +'<li><input type="button" value="x" onclick="delGoods(this)"></li>'
+            newGoods.setAttribute('class','goods')    //加上类名
+            var insertPos = cart.children[1]     //第2个孩子前用于追加
+            cart.insertBefore(newGoods,insertPos)
+            checkAll()
+        }
+        function delGoods(obj){   //删除商品
+            var box = obj.parentNode.parentNode.children[0].getElementsByClassName('checkBtn')[0]
+            if(box.checked){       //如果这个商品选中了，那就从all减去它的小计
+                var minCount = obj.parentNode.previousElementSibling.innerHTML.split('$')[1]; //该商品的小计
+                all -= parseInt(minCount)                                     
+            }
+            var parent = obj.parentNode.parentNode 
+            parent.remove()
+            updateAll()
+            checkAll()
+            // console.log(all)
+        }
+        function numCut(obj){   //数量减少
+            var num = parseInt(obj.nextElementSibling.value)
+            if(num>1){
+                obj.nextElementSibling.setAttribute('value',--num)//重写文档里的value
+                obj.nextElementSibling.value=num    //更新函数内的value
+                var single = obj.parentNode.previousElementSibling.innerHTML.split('$')[1]    //父亲的上一个兄弟,单价那个li标签
+                var change = parseInt(single)*num
+                obj.parentNode.nextElementSibling.innerHTML = '$'+change      //小计
+                var box = obj.parentNode.parentNode.children[0].getElementsByClassName('checkBtn')[0]
+                if(box.checked){
+                    all-=parseInt(single)
+                    updateAll()
+                }
+            }
+            // console.log(all)
+        }
+        function numPlus(obj){  //数量增加
+            var num = parseInt(obj.previousElementSibling.value)
+            if(num>=1){
+                obj.previousElementSibling.setAttribute('value',++num)//重写文档里的value
+                obj.previousElementSibling.value =num  //更新函数内的value
+                var single = obj.parentNode.previousElementSibling.innerHTML.split('$')[1]    //单价
+                var change = parseInt(single)*num
+                obj.parentNode.nextElementSibling.innerHTML = '$'+change     //小计
+                var box = obj.parentNode.parentNode.children[0].getElementsByClassName('checkBtn')[0]
+                if(box.checked){
+                    all+=parseInt(single)
+                    updateAll()
+                }
+            }
+            // console.log(all)
+        }
+        function numModify(obj){    //数量修改功能
+            var reg = new RegExp(/^[1-9]\d{0,1}$/g)   //非0正整数
+            var temp = obj.value
+            if(!reg.test(obj.value)){    //obj已经得到value了，但是文档流里obj的value还没有重写
+                alert('输入有误，只能是1-99之间的正整数')
+                obj.setAttribute('value',1)   //重写文档流的value,自动归1
+                obj.value ='1'    //当前函数内的obj.value
+                
+            }else{
+                obj.setAttribute('value',temp)//重写文档流的value
+                obj.value = temp   //当前函数内的obj.value
+            }
+            var single = obj.parentNode.previousElementSibling.innerHTML.split('$')[1]    //单价
+            var change = parseInt(single)*parseInt(obj.value)//这里change是即将赋值给小计的数值
+            var minCount =  obj.parentNode.nextElementSibling.innerHTML.split('$')[1] //原来的小计
+            obj.parentNode.nextElementSibling.innerHTML = '$'+change     //小计更新
+            var box = obj.parentNode.parentNode.children[0].getElementsByClassName('checkBtn')[0]
+            if(box.checked){
+                all-=parseInt(minCount)   //选中状态下，如果修改了，就把all减去原来的小计，加上修改后的小计
+                all+=change
+                updateAll()     //更新all
+            } 
+            // console.log(obj.value)//这里不会输出已更改的value值，而是这个函数作用域的obj.value
+        }
+       
+        function cacuPer(obj){      
+            var minCount = obj.parentNode.parentNode.children[5].innerHTML.split('$')[1]   
+            if(obj.checked){
+                all+=parseInt(minCount)
+            }else{
+                all-=parseInt(minCount)
+            }
+            // console.log(all)
+            updateAll()
+            checkAll()
+        }
+        function selectAll(obj){             //全选功能
+            var list = document.getElementsByClassName('checkBtn')
+            var n = list.length
+            all = 0             //all清零
+            if(obj.checked){   //全选状态
+                for(var i =0;i<n;i++){
+                   list[i].checked =true   //如果这一条选中，那就加上这一条的小计
+                   var tempMinCount = list[i].parentNode.parentNode.children[5].innerHTML.split('$')[1] 
+                   all+=parseInt(tempMinCount) 
+                }
+                
+            }else{   //全选取消
+                for(var i =0;i<n;i++){
+                   list[i].checked =false
+                }
+                all= 0   //把all归零
+            }
+            updateAll()
+            // console.log(all)
+        }
+        function checkAll(){   //检测是否每个按钮都选中了
+            var list = document.getElementsByClassName('checkBtn')   //每个选中按钮
+            var n = list.length
+            var count=0
+            var checkAllBtn = document.getElementsByClassName('cartTitle')[0].children[0].getElementsByTagName('input')[0]  //全选按钮
+            for(var i =0;i<n;i++){
+                if(list[i].checked ==true){
+                    count++
+                }
+            }
+            if(count==n){
+                checkAllBtn.checked =true
+            }else{
+                checkAllBtn.checked =false
+            }
+        }
+        function updateAll(){
+            var pageAll = document.getElementById("total")
+            pageAll.innerHTML = all
+        }
+    </script>
+</html>

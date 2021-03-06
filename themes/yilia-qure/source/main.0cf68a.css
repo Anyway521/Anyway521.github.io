@@ -1072,11 +1072,11 @@ body {
 
 ::-webkit-scrollbar-thumb {
 	border-radius: 8px;
-	background: -webkit-linear-gradient(45deg,#dff9fe, #75adfc,#dff9fe);
-    background: -moz-linear-gradient(45deg,#dff9fe, #75adfc,#dff9fe);
-    background: -o-linear-gradient(45deg,#dff9fe, #75adfc,#dff9fe);
-    background: -ms-linear-gradient(45deg,#dff9fe, #75adfc,#dff9fe);
-    background: linear-gradient(45deg,#dff9fe, #75adfc,#dff9fe);
+	background: -webkit-linear-gradient(45deg,#9ae4f3, #75adfc,#95ddea);
+    background: -moz-linear-gradient(45deg,#9ae4f3, #75adfc,#95ddea);
+    background: -o-linear-gradient(45deg,#9ae4f3, #75adfc,#95ddea);
+    background: -ms-linear-gradient(45deg,#9ae4f3, #75adfc,#95ddea);
+    background: linear-gradient(45deg,#9ae4f3, #75adfc,#95ddea);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -1122,7 +1122,7 @@ body {
 }
 
 .article-entry .highlight,.article-entry pre {
-	background: #272822;
+	background: #002451;
 	margin: 10px 0;
 	padding: 10px;
 	overflow: auto;
@@ -1865,7 +1865,7 @@ span.attr{
 }
 
 .archives .archive-article-title:hover {
-	color: #0f66bc
+	color: #6f2df7
 }
 
 .archives .archive-article-title span {
@@ -2137,11 +2137,11 @@ span.attr{
 .tools-col .tools-section .search-ul .search-li:hover {
 	
 	background: #5d91e2;
-	background: -webkit-linear-gradient(45deg, #a88ff8,#76b7fc, transparent);
-	background: -moz-linear-gradient(45deg, #a88ff8,#76b7fc, transparent);
-	background: -o-linear-gradient(45deg, #a88ff8,#76b7fc, transparent);
-	background: -ms-linear-gradient(45deg, #a88ff8,#76b7fc, transparent);
-	background: linear-gradient(45deg, #a88ff8,#76b7fc, transparent);
+	background: -webkit-linear-gradient(45deg, #54c8ff,#76b7fc, transparent);
+	background: -moz-linear-gradient(45deg, #54c8ff,#76b7fc, transparent);
+	background: -o-linear-gradient(45deg, #54c8ff,#76b7fc, transparent);
+	background: -ms-linear-gradient(45deg, #54c8ff,#76b7fc, transparent);
+	background: linear-gradient(45deg, #54c8ff,#76b7fc, transparent);
 }
 
 .tools-col .tools-section .search-ul .search-title {
@@ -2284,7 +2284,7 @@ span.attr{
 	line-height: 35px;
 	margin-bottom: 20px;
 	font-size: 30px;
-	transition: color .3s
+	transition: color .3s;
 }
 
 /* 文章内容标题 */
@@ -2295,7 +2295,8 @@ span.attr{
 	line-height: 35px;
 	margin-bottom: 20px;
 	font-size: 26px;
-	transition: color .3s
+	transition: color .3s;
+	position: relative;
 }
 
 .article-header {
@@ -2384,7 +2385,6 @@ span.attr{
 
 .article-inner h1 {
 	font-size: 26px;
-	/* font-size: 1.62rem; */
 	line-height: 1.25;
 	margin-top: 2em;
 	margin-bottom: 1em
@@ -2392,11 +2392,9 @@ span.attr{
 
 .article-inner h2 {
 	font-size: 22px;
-	/* font-size: 1.4rem; */
-	/* line-height: 1.2173913043; */
+
 	line-height: 32px;
 	margin-top: 2.4347826087em;
-	margin-bottom: 1.2173913043em
 }
 
 .article-inner h3 {
@@ -2404,7 +2402,7 @@ span.attr{
 	font-size: 1.16rem;
 	line-height: 1.1052631579;
 	margin-top: 2.9473684211em;
-	margin-bottom: 1.4736842105em
+	margin-bottom: 1.1em
 }
 
 .article-inner h4,.article-inner h5,.article-inner h6 {
@@ -2412,7 +2410,7 @@ span.attr{
 	font-size: 1rem;
 	line-height: 1.3125;
 	margin-top: 3.5em;
-	margin-bottom: 1.75em
+	margin-bottom: 1.1em
 }
 
 .article-inner h4 {
@@ -2482,13 +2480,12 @@ span.attr{
 	content: "";
 	width: 6px;
 	height: 6px;
-	border: 1px solid #2196F3;
 	border-radius: 10px;
 	background: #2196F3;
 	display: inline-block;
 	margin-right: 10px;
 	float: left;
-	margin-top: 10px
+	margin-top: 10px;
 }
 
 .article-entry ol {
@@ -3043,11 +3040,11 @@ span.attr{
 .tooltip-left .tooltip-content {
 	position: absolute;
 	background: #24c1f6;
-	background: -webkit-linear-gradient(-45deg,#24c1f6,#2196f3,#c974f5,#2196f3);
-	background: -moz-linear-gradient(-45deg,#24c1f6,#2196f3,#c974f5,#2196f3);
-	background: -o-linear-gradient(-45deg,#24c1f6,#2196f3,#c974f5,#2196f3);
-	background: -ms-linear-gradient(-45deg,#24c1f6,#2196f3,#c974f5,#2196f3);
-	background: linear-gradient(-45deg,#24c1f6,#2196f3,#c974f5,#2196f3);
+	background: -webkit-linear-gradient(-45deg,#24c1f6,#2196f3,#8d83e0,#2196f3);
+	background: -moz-linear-gradient(-45deg,#24c1f6,#2196f3,#8d83e0,#2196f3);
+	background: -o-linear-gradient(-45deg,#24c1f6,#2196f3,#8d83e0,#2196f3);
+	background: -ms-linear-gradient(-45deg,#24c1f6,#2196f3,#8d83e0,#2196f3);
+	background: linear-gradient(-45deg,#24c1f6,#2196f3,#8d83e0,#2196f3);
 	/* background: #1296db; */
 	z-index: 9999;
 	width: 200px;
@@ -3261,10 +3258,15 @@ span.attr{
 
 /* 版权信息 */
 .copyright {
-	background-color: rgba(162, 223, 247, 0.925);
+	background-color: rgb(151 216 251 / 93%);
 	margin-top: 2em;
-	border-left: 3px solid #03a9f4;
+	border-left: 4px solid #03a9f4;
 	padding: .5em 1em;
+}
+.article-entry ul.copyright li::before{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
 }
 ul.copyright li {
 	font-size: 19px;
@@ -3412,6 +3414,9 @@ ul.copyright li {
 		border-left: none;
 		padding: 0;
 		/* border-bottom: 1px dotted #ddd */
+	}
+	a.article-title::before, a.article-title::after {
+		display: none;
 	}
 
 	.article-header h1 {
@@ -4498,17 +4503,40 @@ a.pswp__share--download:hover {
 }
 /*标题和日期的hover*/
 .article-title:hover {
-	color: #0f66bc
+	/* color: #0f66bc */
+	color: #6f2df7;
 }
 
+
+a.article-title::before, a.article-title::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    left: 50%;
+    width: 0;
+    background-color: #6f2df7;
+    transition: all .2s linear;
+    bottom: -4px;
+}
+a.article-title:hover::before {
+    width: 50%;
+    left: 0;
+}
+a.article-title:hover::after {
+    width: 50%;
+    right: 0;
+}
+
+
+
 .archive-article-date:hover {
-	color: #0f66bc
+	color: #6f2df7
 }
 /* .left-col .intrude-less .inner a:hover{background: #ffee93} */
 
 /* 归档的年份hover */
 .archives-wrap .archive-year-wrap a:hover {
-	color: #0f66bc
+	color: #6f2df7
 }
 
 /* a的hover */
@@ -4547,7 +4575,7 @@ a:hover {
 .left-col #header .profilepic_rotate img {
 	border-radius: 300px;
 	opacity: 1;
-    -webkit-transition: all .8s ease-out;
+    -webkit-transition: all .6s ease-in-out;
     
 }
 
@@ -4599,9 +4627,9 @@ a:hover {
 
 /* 优化鼠标移动到代码块特效 */
 div.code-wrapper{
-	cursor: cell;
-	cursor: -moz-cell;
-	cursor: -webkit-cell;
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
 }
 
 
@@ -4615,4 +4643,10 @@ a.gitment-editor-footer-tip{
 }
 .gitment-footer-container{
 	display: none !important;
+}
+
+
+/* valine评论框优化 */
+.v[data-class=v] .vwrap .vheader .vinput:focus{
+	border-bottom-color: #2196f3!important;
 }
