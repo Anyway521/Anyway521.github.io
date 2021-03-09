@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/firework20200317.png">
+    <script src="https://kit.fontawesome.com/42e04b45ec.js"></script>
+    <title>轮播图</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-family: inherit;
+            font-size: 100%;
+            list-style: none;
+        }
+        html{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: whitesmoke;
+        }
+        /* 轮播图 */
+        .carousel-out{
+            width: 670px;
+            padding: 5px;
+            background: #263c4f;
+            box-shadow: 0 0 10px rgba(61, 122, 132, 0.5);
+        }
+        img{
+            width: 100%;
+        }
+        #carousel{
+            position: relative;
+            cursor: pointer;
+            height: 245px;
+            max-width: 670px;
+            overflow: hidden;
+        }
+        #pic{
+            text-align: center;
+        }
+        #pic li img{
+            margin: 0;
+        }
+
+        #list{
+            z-index: 4;
+            position:absolute;
+            bottom:10px;
+            right:10px;
+        }
+        #list li{float:left;
+            background: white;
+            color:black;
+            height:10px;
+            width:10px;
+            font-size:14px;
+            margin-right:10px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 50%;
+        }
+        #list .on{
+            background: aqua;
+            color:white;
+        }
+        #btn_left{
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -122px;
+            cursor: pointer;
+        }
+        #btn_left:hover{
+            width: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -122px;
+            cursor: pointer;
+        }
+        #btn_right{
+            z-index: 3;
+            width: 50px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -122px;
+            cursor: pointer;
+        }
+        #btn_right:hover{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -122px;
+            cursor: pointer;
+
+        }
+        #btn_left i,#btn_right i{
+            font-size: 1.5em;
+            color: white;
+            display: none;
+            opacity: .8;
+        }
+
+        #carousel-cover{
+            display: flex;
+            justify-content: space-between;
+        }
+        #carousel-cover-left{
+            z-index: 2;
+            width: 50px;
+            height: 245px;
+            margin-top: -245px;
+            background: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+        }
+        #carousel-cover-right{
+            z-index: 2;
+            width: 50px;
+            height: 245px;
+            margin-top: -245px;
+            background: linear-gradient(to left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+        }
+
+        /* 轮播图结束 */
+    </style>
+</head>
+
+<body>
+    <article class="carousel-out">
+        <section id="carousel" onmouseover="show_btn(this)" onmouseout="hidden_btn(this)">
+            <ul id="pic">
+                <li><img src="https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image1.jpg" alt=""></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image2.jpg" alt=""></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image3.jpg" alt=""></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image4.jpg" alt=""></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/Anyway521/blogpic@main/image/image5.jpg" alt=""></li>
+            </ul>
+            <ol id="list" type="1"> 
+                <li class="on"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <div id="btn_left"><i class="fa fa-angle-double-left" aria-hidden="true"></i></div>
+            <div id="btn_right"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
+        </section>
+        <aside id="carousel-cover">
+            <div id="carousel-cover-left"></div>
+            <div id="carousel-cover-right"></div>
+        </aside>
+        
+    </article>
+</body>
+
+<script>
+    //coursel
+    var pic = document.getElementById("pic");
+    var f_list= document.getElementById("list")
+    var list = document.getElementById("list").getElementsByTagName("li");
+    var left_b = document.getElementById("btn_left");
+    var right_b = document.getElementById("btn_right");
+    var index=0;
+    var time = null;
+
+    function auto() {
+        
+        time=setInterval(function(){
+        index++;
+        index = index % list.length;
+            img_change(index)
+        },3000)
+        
+    }
+        auto();
+
+    // 选择要显示的序号和图片
+    function img_change(cur_index){
+        pic.style.marginTop=-250*cur_index+"px";
+        for(var i=0;i<list.length;i++){
+            list[i].className = " ";
+        }
+        list[cur_index].className="on";
+        index=cur_index;
+    }
+
+    function overstop_outchange(obj) {
+        // 鼠标悬停，清除计时器，暂停滚动
+        obj.onmouseover = function () {
+            obj.style.cursor = "pointer";
+            clearInterval(time);
+        }
+        //鼠标离开，继续滚动
+        obj.onmouseout = auto;
+    }
+    overstop_outchange(f_list);
+    overstop_outchange(pic);
+    overstop_outchange(left_b);
+    overstop_outchange(right_b);
+
+
+    // 鼠标悬停时切换对应的序号
+    for (var i=0;i<list.length;i++){
+        //id等于自身的下标
+        list[i].id = i
+        list[i].onmouseover=function(){
+            img_change(this.id)
+        }
+    }
+    //按钮点击切换
+    left_b.onclick = function () {
+        index--;
+        if (index <= 0) {
+            index += list.length - 1;
+        }
+        img_change(index);
+    }
+
+
+    right_b.onclick = function () {
+        index++;
+        index = index % list.length;
+        img_change(index);
+    }
+
+    function show_btn(obj) {
+        var buttons = obj.getElementsByTagName("div");
+        for (var i = 0; i < buttons.length; i++){
+            buttons[i].children[0].style.display = "block" 
+        }
+    }
+
+    function hidden_btn(obj) {
+        var buttons = obj.getElementsByTagName("div");
+        for (var i = 0; i < buttons.length; i++){
+            buttons[i].children[0].style.display = "none" 
+        }
+    }
+	//禁止查看
+	document.onkeydown=function(){
+		var e = window.event||arguments[0];
+		if(e.keyCode==123){
+			alert('还在按F12?╭(╯^╰)╮');
+				return false;
+		}else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==73)){
+			alert('Crtl+Shift+I 有用？(￣ε(#￣)');
+				return false;
+		}else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==74)){
+			alert('Crtl+Shift+J 有用咩??o(*￣︶￣*)o');
+				return false;
+		}else if((e.ctrlKey)&&(e.keyCode==83)){
+				alert('Crtl+S保存？╰╮(￣▽￣///)！');
+				return false;
+		}else if((e.ctrlKey)&&(e.keyCode==85)){
+			   alert('Crtl+U ?(╯‵□′)╯才不给你看源代码');
+			   return false;
+		}
+	}
+	document.oncontextmenu=function(){
+		alert('鼠标右键也不好使呦罒ω罒');
+		return false;
+	}
+</script>
+</html>
